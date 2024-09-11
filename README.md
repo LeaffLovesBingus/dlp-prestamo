@@ -5,7 +5,7 @@ DLP library - catálogo y préstamos
 ### Tareas
 | Actividad | Responsable | Estado (🕐, ✅, ❌) |
 | --------- | ----------- | ----------------------------- |
-| - | - | - |
+| Crear el repositorio para el proyecto | Matías Soto | ✅ |
 | - | - | - |
 | - | - | - |
 | - | - | - |
