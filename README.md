@@ -3,7 +3,7 @@ DLP library - catálogo y préstamos
 
 ## Sprint 1
 ### Tareas
-| Actividad | Responsable | Estado ( - , ✅, ❌) |
+| Actividad | Responsable | Estado (🕐, ✅, ❌) |
 | --------- | ----------- | ----------------------------- |
 | - | - | - |
 | - | - | - |
