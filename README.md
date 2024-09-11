@@ -3,6 +3,6 @@ DLP library - catálogo y préstamos
 
 ## Sprint 1
 ### Tareas
-| Actividad | Responsable | Estado (-, En proceso, Hecho) |
+| Actividad | Responsable | Estado ( - , En proceso, Hecho) |
 | --------- | ----------- | ----------------------------- |
-| Hola gente | :3 | - |
+| - | - | - |
