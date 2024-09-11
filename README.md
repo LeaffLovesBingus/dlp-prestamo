@@ -8,4 +8,4 @@ DLP library - catálogo y préstamos
 | - | - | - |
 | - | - | - |
 | - | - | - |
-| - | - | - |
+| - | - | :white_check_mark:|
