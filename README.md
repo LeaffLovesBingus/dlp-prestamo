@@ -6,3 +6,6 @@ DLP library - catálogo y préstamos
 | Actividad | Responsable | Estado ( - , En proceso, Hecho) |
 | --------- | ----------- | ----------------------------- |
 | - | - | - |
+| - | - | - |
+| - | - | - |
+| - | - | - |
