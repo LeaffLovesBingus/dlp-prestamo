@@ -14,3 +14,7 @@ DLP library - catálogo y préstamos
 | Aprender sobre la lectura de QR | - | ❌ |
 | Definir paleta de colores, estilos, animaciones, etc... | - | ❌ |
 | - | - | - |
+
+
+Avance mockup
+(https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
