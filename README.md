@@ -17,4 +17,4 @@ DLP library - catálogo y préstamos
 
 
 Avance mockup
-(https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
+[](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
