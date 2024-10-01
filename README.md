@@ -7,7 +7,7 @@ DLP library - catálogo y préstamos
 | --------- | ----------- | ----------------------------- |
 | Crear el repositorio para el proyecto | Matías Soto | ✅ |
 | Definir mockup del catálogo principal | - | 🕐 |
-| Definir estructura de datos que almacene los libros y su información | Juan Luis Guerra | ✅ |
+| Definir estructura de datos que almacene los libros y su información | Julio Guerra | ✅ |
 | Prototipo semifuncional | - | ❌ |
 | Buscar APIs útiles / Pedirle al team de la api | - | ❌ |
 | Aprender a utilizar APIs | - | ❌ |
