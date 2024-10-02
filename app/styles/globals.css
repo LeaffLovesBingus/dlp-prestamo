@@ -154,3 +154,61 @@ img {
 .primer-parrafo {
   font-size: 1.5rem;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.book-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  font-size: 12px;
+  color: #777;
+}
