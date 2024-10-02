@@ -15,11 +15,19 @@ DLP library - catálogo y préstamos
 | Definir paleta de colores, estilos, animaciones, etc... | - | ❌ |
 | - | - | - |
 
-
-## Avance mockup
-
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
-
 ## Boceto prestamo-devolución
 
 ![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/boceto-prestamo-devolucion.png)
+
+- Requiere:
+  - Información Libro Escaneado
+  
+- Entrega:
+  - Prestamo
+
+## Boceto Catalogo
+
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
+
+- Requiere:
+  - Arreglo de Información Libros de la Biblioteca
