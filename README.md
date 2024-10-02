@@ -19,3 +19,7 @@ DLP library - catálogo y préstamos
 ## Avance mockup
 
 ![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
+
+## Boceto prestamo-devolución
+
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/boceto-prestamo-devolucion.png)
