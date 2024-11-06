@@ -3,6 +3,7 @@ DLP library - catálogo y préstamos
 
 ## Sprint 1
 ### Tareas
+ *desactualizado*
 | Actividad | Responsable | Estado (❌, 🕐, ✅) |
 | --------- | ----------- | ----------------------------- |
 | Crear el repositorio para el proyecto | Matías Soto | ✅ |
@@ -15,20 +16,27 @@ DLP library - catálogo y préstamos
 | Definir paleta de colores, estilos, animaciones, etc... | - | ❌ |
 | - | - | - |
 
-## Boceto prestamo-devolución
+## Propuesta de diseño
 
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/boceto-prestamo-devolucion.png)
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/PaginaPrincipal.png)
 
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/Catalogo.png)
+
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/LandingPage.png)
+
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/Formulario.png)
+
+
+## Boceto Catalogo (Bitácora)
+  ...
+
+- Requiere:
+  - Arreglo de Información Libros de la Biblioteca
+  
+  ...
 
 - Requiere:
   - Información Libro Escaneado
   
 - Entrega:
   - Prestamo
-
-## Boceto Catalogo
-
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/mockup1.jpg)
-
-- Requiere:
-  - Arreglo de Información Libros de la Biblioteca
