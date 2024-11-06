@@ -17,7 +17,8 @@ DLP library - catálogo y préstamos
 
 ## Boceto prestamo-devolución
 
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/boceto-prestamo-devolucion.png)
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/boceto-prestamo-devolucion.png)
+
 
 - Requiere:
   - Información Libro Escaneado
@@ -27,7 +28,7 @@ DLP library - catálogo y préstamos
 
 ## Boceto Catalogo
 
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/mockup1.jpg)
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/mockup1.jpg)
 
 - Requiere:
   - Arreglo de Información Libros de la Biblioteca
