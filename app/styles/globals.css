@@ -1,5 +1,7 @@
 /* Start Simple Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Definimos colores */
 
 :root {
@@ -9,7 +11,10 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #fcfffd;
+  background-color: #2a2b3f;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  color: #fcfffd;
 }
 
 *,
@@ -30,7 +35,7 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 ol,
@@ -136,7 +141,7 @@ img {
 .container-404 {
   display: flex;
   flex-direction: column;
-
+  
   margin: 0 auto;
   width: 90%;
   text-align: center;
@@ -153,4 +158,51 @@ img {
 
 .primer-parrafo {
   font-size: 1.5rem;
+}
+
+.book-shelf {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.book-card {
+  width: 150px;
+  height: 240px;
+  margin: 10px;
+  border: 1px solid #1a1b2d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #121320;
+  cursor: pointer;
+  background-color: #242333;
+}
+
+.book-card .portada {
+  width: 150px;
+  height: 180px;
+  object-fit: none;
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.book-card .pie {
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.book-card .titulo {
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 100%;
+}
+
+.book-card .autor {
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 100%;
+  margin-top: 0.3em;
 }
