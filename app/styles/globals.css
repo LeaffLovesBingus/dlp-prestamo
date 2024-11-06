@@ -38,6 +38,22 @@ ul {
   font-weight: 300;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 ol,
 ul {
   list-style: none;
@@ -96,15 +112,20 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   background-color: var(--nav);
-  color: #fcfffd;
+  background: linear-gradient(90deg, #ff75b7, #ffb8ed); 
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  color: #2f4668;
+  border: 1px solid #ffb8ed;
 }
 
 .btn:hover {
-  background-color: #e7f0ea;
-  color: var(--nav);
+  background: linear-gradient(90deg, #753654, #c18ab3);
+  box-shadow: 0px 0px 10px hsla(0, 0%, 100%, 0.3);
+  color: #fcfffd;
+  transition-duration: 0.5s;
 }
 
 .inputText {
@@ -182,9 +203,10 @@ img {
 .book-card .portada {
   width: 150px;
   height: 180px;
-  object-fit: none;
   display: block;
   border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .book-card .pie {
@@ -198,6 +220,7 @@ img {
   font-weight: 400;
   font-size: 0.9em;
   line-height: 100%;
+  color: #fcfffd;
 }
 
 .book-card .autor {
@@ -205,4 +228,37 @@ img {
   font-size: 0.8em;
   line-height: 100%;
   margin-top: 0.3em;
+  color:#fcfffd;
 }
+
+.pdrl {
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.pdrl .portada {
+  width: 150px;
+  height: 225px;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #1a1b2d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #121320;
+  background-color: #242333;
+}
+
+.pdrl .info-libro {
+  width: 200px;
+  height: 225px;
+  border: 1px solid #1a1b2d;
+  box-shadow: 0px 0px 5px #121320;
+  border-radius: 5px;
+  background-color: #242333;
+}
+
+.pdrl .btn {
+  width: 150px;
+}
+
