@@ -1,156 +1,86 @@
-/* Start Simple Reset */
+/* importamos fuentes... */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Definimos colores */
 
-:root {
-  --nav: #adcfce;
+.titleContainer{
+  /*border: 2px solid red;*/ 
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: #fcfffd;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
+.logo{
+  /*formato*/
+  image-rendering: auto;
+  width: 50;
   height: auto;
 }
 
-/* End simple reset */
-
-/* Contenido general (se usa en todas las páginas) */
-
-.title {
-  margin-top: 2rem;
-  font-size: 2rem;
+.title{
+  /*formato*/
+  font-size: 120px;
   text-align: center;
+  margin-left: 10px;
 }
 
-.title-2 {
-  margin-top: 2rem;
-  font-size: 1.7rem;
-  text-align: center;
+
+.allInfo{
+  /* font */
+  font-size: 30px;
+  /*formato*/
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  
 }
 
-.text {
-  font-size: 1.2rem;
-  text-align: center;
+.bookImage{
+  /*formato-imagen*/
+  background-color: #4a91e213;
+  image-rendering: auto;
 }
 
-.container {
-  margin: 0 auto;
-  width: 90%;
-  text-align: center;
-}
-
-.container__map {
-  margin: 1rem auto 1rem auto;
+.bookInfo{
+  /*formato*/
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
+}
+
+.nombreGenero, .existencias, .intereses{
+  /*formato*/
+  width: 600px;
+  height: 175px;
+  /*fondo*/
+  background-color: rgba(24, 24, 32, 0.4);
+  /*borde*/
+  border: 2px solid rgba(0, 0, 0, 0.3); 
+  border-radius: 15px;
+}
+
+.solicitud{
+  /*formato*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+
+}
+
+
+
+/* css-página */
+html, body{ 
+  
+  /* texto */
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  
+  /* fondo */
+  background: linear-gradient(180deg, #191a24, #6063a4);
+  
+  /* formato */
+  display: flex;
   justify-content: center;
-  gap: 1rem;
-}
-
-.container__map > div {
-  width: 320px;
-  border-radius: 5px;
-  background-color: var(--nav);
-  margin-bottom: 1rem;
-}
-
-.btn {
-  margin: 1rem auto;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  background-color: var(--nav);
-  color: #fcfffd;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #e7f0ea;
-  color: var(--nav);
-}
-
-.inputText {
-  margin: 1rem auto;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: 1px solid var(--nav);
-  font-size: 1.2rem;
-}
-
-.link {
-  color: var(--nav);
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-  /* yellow subrayado */
-  background-color: yellow;
-}
-
-/* Página Error Custom 404 */
-
-.container-404-general {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  align-content: center;
-  gap: 1rem;
-}
-
-.container-404 {
-  display: flex;
   flex-direction: column;
-
-  margin: 0 auto;
-  width: 90%;
-  text-align: center;
-  height: 100%;
-}
-
-.title-404 {
-  font-size: 5rem;
-  padding: 1rem 2rem;
-  font-weight: bold;
-  color: var(--nav);
-  border-bottom: 1px solid var(--nav);
-}
-
-.primer-parrafo {
-  font-size: 1.5rem;
+  height: 100vh;
+  margin: 0;
 }
