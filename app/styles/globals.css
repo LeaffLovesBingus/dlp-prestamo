@@ -2,20 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+
 .titleContainer{
-  /*border: 2px solid red;*/ 
+  background-color: #00000040;
+
+  /*formato del bloque*/
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 500px;
+  justify-content: left;
+  align-items: center;
+  /*bordes*/
+  border: 2px solid #96969640; 
+  border-radius: 25px;
+  /*espacio*/
+  gap: 10px;
+
+  
 }
 
 .logo{
-  /*formato*/
-  image-rendering: auto;
-  width: 50;
-  height: auto;
+  
 }
 
 .title{
+  /*texto*/
+  font-size: large;
   /*formato*/
-  font-size: 120px;
   text-align: center;
   margin-left: 10px;
 }
@@ -35,46 +49,76 @@
   /*formato-imagen*/
   background-color: #4a91e213;
   image-rendering: auto;
+
+  height: 700px;
+  width: 500px;
 }
 
-.bookInfo{
+.bookInfo, .solicitud{
   /*formato*/
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.nombreGenero, .existencias, .intereses{
-  /*formato*/
-  width: 600px;
-  height: 175px;
-  /*fondo*/
-  background-color: rgba(24, 24, 32, 0.4);
-  /*borde*/
-  border: 2px solid rgba(0, 0, 0, 0.3); 
-  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  
 }
 
 .solicitud{
-  /*formato*/
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 400px;
-
+  justify-content: flex-end;
 }
 
+.nombreGenero, .existencias, .intereses{
+  word-wrap: break-word;
+  word-break: break-word;
+  /*formato*/
+  width: 700px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*fondo*/
+  background-color: rgba(24, 24, 32, 0.4);
+  /*borde*/
+  border: 3px solid rgba(0, 0, 0, 0.3); 
+  border-radius: 25px;
+}
 
+.intereses{
+  font-size: 20px;
+}
+
+.pedir, .meInteresa, .devolver{
+  /*formato*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 500px;
+  /*fondo*/
+  background: linear-gradient(90deg, #75a8ff 40%, #b8d9ff);
+  /*borde*/
+  border: 5px solid #b8d9ff; 
+  border-radius: 15px;
+  /*texto*/
+  color: #2f4668;
+  font-size: 23px;
+}
 
 /* css-página */
+
+/*general*/
 html, body{ 
   
   /* texto */
   font-family: 'Kanit', sans-serif;
   color: white;
+  margin: 0;
   
   /* fondo */
-  background: linear-gradient(180deg, #191a24, #6063a4);
+  background: linear-gradient(180deg, #121219 10%, #6063a4 100%);
   
   /* formato */
   display: flex;
@@ -83,4 +127,28 @@ html, body{
   flex-direction: column;
   height: 100vh;
   margin: 0;
+  
+}
+
+/*botones*/
+button {
+  font-family: 'Kanit', sans-serif;
+  color: white;
+}
+
+/*etiqueta h1*/
+h1{
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nameBook{
+
+}
+.detailsBook{
+  font-size: 30px;
+  font-weight: 400;
 }

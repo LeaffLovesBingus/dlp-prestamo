@@ -21,7 +21,7 @@ export default function Home() {
         
         <div className="titleContainer">
           <img src ={logo}/>
-          <h className="title">DLP Library</h>
+          <h1 className="title">DLP Library</h1>
         </div>
 
 
@@ -34,16 +34,16 @@ export default function Home() {
           <div className="bookInfo">
 
             <div className='nombreGenero'>
-              <h2>{bookTitle}</h2>
-              <h4>{bookAutor} - {bookGenere}</h4>
+              <h1 className='nameBook'>{bookTitle}</h1>
+              <h1 className='detailsBook'>{bookAutor} - {bookGenere}</h1>
             </div>
 
             <div className='existencias'>
-                <h2>Hay {existencias} existencias</h2>
+                <h1>{existencias} existencias</h1>
             </div>
 
             <div className='intereses'>
-                <h2>A {intereses} personas les interesa este libro</h2>
+                <h1>A {intereses} personas les interesa este libro</h1>
             </div>
 
           </div>
@@ -51,15 +51,15 @@ export default function Home() {
           <div className='solicitud'>
 
             <button className='pedir'>
-              Pedir
+              <h1>Pedir</h1>
             </button>
 
             <button className='meInteresa'>
-              Me interesa
+              <h1>Me Interesa</h1>
             </button>
 
             <button className='devolver'>
-              Devolver
+              <h1>Devolver</h1>
             </button>
 
           </div>
