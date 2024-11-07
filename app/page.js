@@ -8,6 +8,7 @@ export default function Home() {
       <>
         <div className="container">
           <h1 className="title">Hola mundo!</h1>
+          <h1 className="title">Que pasa realmente?</h1>
           <h1 className="title">Adios mundo!</h1>
         </div>
       </>
