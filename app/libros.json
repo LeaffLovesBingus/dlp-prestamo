@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "titulo": "La comunidad del anillo",
+        "autores": "J. R. R. Tolkien",
+        "caratula": "https://images.cdn3.buscalibre.com/fit-in/360x360/54/49/5449ba87a3e457a22dd6d0972b5c261e.jpg",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    },
+    {
+        "id": "2",
+        "titulo": "Don Quijote de la Mancha",
+        "autores": "Miguel de Cervantes",
+        "caratula": "https://www.planetalector.cl/usuaris/thumbnails/libros/fotos/380/360/379580_portada_don-quijote-de-la-mancha-comic_miguel-de-cervantes_202310231106.jpg",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    },
+    {
+        "id": "3",
+        "titulo": "Odisea",
+        "autores": "Homero",
+        "caratula": "",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    },
+    {
+        "id": "4",
+        "titulo": "Alicia en el país de las maravillas",
+        "autores": "Lewis Carroll",
+        "caratula": "",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    },
+    {
+        "id": "5",
+        "titulo": "Cumbres borrascosas",
+        "autores": "Emily Brontë",
+        "caratula": "",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    },
+    {
+        "id": "6",
+        "titulo": "La casa de los espíritus",
+        "autores": "Isabel Allende",
+        "caratula": "",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    },
+    {
+        "id": "7",
+        "titulo": "La última niebla",
+        "autores": "María Luisa Bombal",
+        "caratula": "",
+        "isbn": "",
+        "tags": "",
+        "donante": "",
+        "fecha_donacion": "",
+        "prestado": "",
+        "borrado": false
+    }
+]

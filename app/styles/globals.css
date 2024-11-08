@@ -1,5 +1,7 @@
 /* Start Simple Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Definimos colores */
 
 :root {
@@ -9,7 +11,10 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #fcfffd;
+  background-color: #2a2b3f;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  color: #fcfffd;
 }
 
 *,
@@ -30,7 +35,23 @@ ol,
 ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
+  font-weight: 300;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 ol,
@@ -91,15 +112,20 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   background-color: var(--nav);
-  color: #fcfffd;
+  background: linear-gradient(90deg, #ff75b7, #ffb8ed); 
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  color: #2f4668;
+  border: 1px solid #ffb8ed;
 }
 
 .btn:hover {
-  background-color: #e7f0ea;
-  color: var(--nav);
+  background: linear-gradient(90deg, #753654, #c18ab3);
+  box-shadow: 0px 0px 10px hsla(0, 0%, 100%, 0.3);
+  color: #fcfffd;
+  transition-duration: 0.5s;
 }
 
 .inputText {
@@ -136,7 +162,7 @@ img {
 .container-404 {
   display: flex;
   flex-direction: column;
-
+  
   margin: 0 auto;
   width: 90%;
   text-align: center;
@@ -154,3 +180,85 @@ img {
 .primer-parrafo {
   font-size: 1.5rem;
 }
+
+.book-shelf {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.book-card {
+  width: 150px;
+  height: 240px;
+  margin: 10px;
+  border: 1px solid #1a1b2d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #121320;
+  cursor: pointer;
+  background-color: #242333;
+}
+
+.book-card .portada {
+  width: 150px;
+  height: 180px;
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.book-card .pie {
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.book-card .titulo {
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 100%;
+  color: #fcfffd;
+}
+
+.book-card .autor {
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 100%;
+  margin-top: 0.3em;
+  color:#fcfffd;
+}
+
+.pdrl {
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.pdrl .portada {
+  width: 150px;
+  height: 225px;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #1a1b2d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #121320;
+  background-color: #242333;
+}
+
+.pdrl .info-libro {
+  width: 200px;
+  height: 225px;
+  border: 1px solid #1a1b2d;
+  box-shadow: 0px 0px 5px #121320;
+  border-radius: 5px;
+  background-color: #242333;
+}
+
+.pdrl .btn {
+  width: 150px;
+}
+
