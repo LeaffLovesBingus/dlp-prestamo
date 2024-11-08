@@ -4,23 +4,25 @@ import { NextResponse } from "next/server";
 
 export const miArreglo = [
   {
-    id: 1,
-    nombre: "Juan",
-    apellido: "Perez",
-    edad: 25,
-  },
-  {
-    id: 2,
-    nombre: "Maria",
-    apellido: "Gomez",
-    edad: 30,
-  },
-  {
-    id: 3,
-    nombre: "Pedro",
-    apellido: "Gonzalez",
-    edad: 40,
-  },
+    "libros": [
+      {
+        "id": 5,
+        "titulo": "Moby Dick",
+        "autores": "Herman Melville",
+        "caratula": "...",
+        "isbn": "9788491054290",
+        "tags": [
+          "aventura",
+          "épica",
+          "clásico"
+        ],
+        "donante": "mayra.carrillo@alumnos.uach.cl",
+        "fecha_donacion": "2021-07-07T16:20:00.000Z",
+        "prestado": false,
+        "borrado": false
+      }
+    ]
+  }
 ];
 
 // Y la manejamos con el método GET, por ruta sería en (local): http://localhost:3000/api/ejemplo-1
