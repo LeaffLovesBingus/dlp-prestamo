@@ -1,20 +1,8 @@
 # dlp-prestamo
 DLP library - catálogo y préstamos
 
-## Sprint 1
-### Tareas
- *desactualizado*
-| Actividad | Responsable | Estado (❌, 🕐, ✅) |
-| --------- | ----------- | ----------------------------- |
-| Crear el repositorio para el proyecto | Matías Soto | ✅ |
-| Definir mockup del catálogo principal | - | ✅ |
-| Definir estructura de datos que almacene los libros y su información | Julio Guerra | ✅ |
-| Prototipo semifuncional | - | 🕐 |
-| Buscar APIs útiles / Pedirle al team de la api | - | ❌ |
-| Aprender a utilizar APIs | - | ❌ |
-| Aprender sobre la lectura de QR | - | ❌ |
-| Definir paleta de colores, estilos, animaciones, etc... | - | ❌ |
-| - | - | - |
+Esta branch está centrada en el desarrollo de la página principal y el catálogo.
+- Matías Soto Lomboy
 
 ## Logotipo
 
@@ -26,21 +14,3 @@ https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sha
 
 ![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/Catalogo.png)
 
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/LandingPage.png)
-
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/Formulario.png)
-
-
-## Boceto Catalogo (Bitácora)
-  ...
-
-- Requiere:
-  - Arreglo de Información Libros de la Biblioteca
-  
-  ...
-
-- Requiere:
-  - Información Libro Escaneado
-  
-- Entrega:
-  - Prestamo
