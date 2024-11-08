@@ -16,6 +16,10 @@ DLP library - catálogo y préstamos
 | Definir paleta de colores, estilos, animaciones, etc... | - | ❌ |
 | - | - | - |
 
+## Logotipo
+
+![](https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sharing)
+
 ## Propuesta de diseño
 
 ![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/PaginaPrincipal.png)
