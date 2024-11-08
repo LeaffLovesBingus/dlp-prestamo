@@ -18,7 +18,7 @@ DLP library - catálogo y préstamos
 
 ## Logotipo
 
-![](https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sharing)
+https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sharing
 
 ## Propuesta de diseño
 
