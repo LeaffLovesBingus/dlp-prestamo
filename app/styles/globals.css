@@ -2,6 +2,7 @@
 
 /* Definimos colores */
 
+
 :root {
   --nav: #adcfce;
 }
@@ -73,7 +74,7 @@ img {
 .container__map {
   margin: 1rem auto 1rem auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -135,7 +136,7 @@ img {
 
 .container-404 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   margin: 0 auto;
   width: 90%;
@@ -153,4 +154,60 @@ img {
 
 .primer-parrafo {
   font-size: 1.5rem;
+}
+
+.book-shelf {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.book-card {
+  width: 150px;
+  height: 240px;
+  margin: 10px;
+  border: 1px solid #1a1b2d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #121320;
+  cursor: pointer;
+  background-color: #242333;
+  flex-direction: row;
+}
+
+.book-card .portada {
+  width: 150px;
+  height: 180px;
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.book-card .pie {
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+.book-card .titulo {
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 100%;
+  color: #fcfffd;
+}
+
+.book-card .autor {
+  font-weight: 300;
+  font-size: 0.8em;
+  line-height: 100%;
+  margin-top: 0.3em;
+  color:#fcfffd;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 4rem auto;
 }

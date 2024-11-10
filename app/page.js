@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className="container">
         <h1 className="title">Hola mundo!</h1>
-        <div className="container">
+        <div className="book-shelf">
           <ListOfBooks />
         </div>
       </div>
