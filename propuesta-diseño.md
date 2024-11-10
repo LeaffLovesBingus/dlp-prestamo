@@ -33,4 +33,4 @@ Botónes:
     
     Bordes:
         border: 2px solid rgba(0, 0, 0, 0.3);
-        border-radius: 25px;
+        border-radius: 25px; 

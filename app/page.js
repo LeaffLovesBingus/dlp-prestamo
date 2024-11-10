@@ -17,13 +17,11 @@ export default function Home() {
   let intereses = 0;
 
     return (
-      <>
-        
+      <div className='conteiner'>
         <div className="titleContainer">
           <img src ={logo}/>
           <h1 className="title">DLP Library</h1>
         </div>
-
 
         <div className="allInfo">
 
@@ -68,7 +66,7 @@ export default function Home() {
 
         </div>
           
-      </>
+      </div>
     );
   }
   

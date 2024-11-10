@@ -1,57 +1,59 @@
 /* importamos fuentes... */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+.conteiner{
+  border: 0.2vw solid #96969630; 
+}
 
 .titleContainer{
+  /*posicion*/
+  
+  /*fondo*/
   background-color: #00000040;
-
   /*formato del bloque*/
   display: flex;
   flex-direction: row;
-  height: 200px;
-  width: 500px;
+  height: 15vh;
+  width: 40vh;
   justify-content: left;
   align-items: center;
   /*bordes*/
-  border: 2px solid #96969640; 
-  border-radius: 25px;
+  border: 0.2vw solid #96969630; 
+  border-radius: 2vh;
   /*espacio*/
-  gap: 10px;
-
+  gap: 1vw;
   
 }
-
+/*
 .logo{
   
 }
+*/
 
 .title{
   /*texto*/
-  font-size: large;
+  font-size: 2vw;
   /*formato*/
   text-align: center;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 
 
 .allInfo{
-  /* font */
-  font-size: 30px;
   /*formato*/
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 1vw;
   
 }
 
 .bookImage{
   /*formato-imagen*/
-  background-color: #4a91e213;
+  background-color: #a3a5c3;
   image-rendering: auto;
 
-  height: 700px;
-  width: 500px;
+  height: auto;
+  width: 20vw;
 }
 
 .bookInfo, .solicitud{
@@ -60,20 +62,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 56px;
+  gap: 3vh;
   
 }
+/*
+.bookInfo{
 
+}
+*/
 .solicitud{
   justify-content: flex-end;
+  gap: 3vh;
 }
 
 .nombreGenero, .existencias, .intereses{
-  word-wrap: break-word;
-  word-break: break-word;
   /*formato*/
-  width: 700px;
-  height: 190px;
+  width: 30vw;
+  height: 11vh;
+  padding: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,30 +87,38 @@
   /*fondo*/
   background-color: rgba(24, 24, 32, 0.4);
   /*borde*/
-  border: 3px solid rgba(0, 0, 0, 0.3); 
-  border-radius: 25px;
+  border: 0.15vw solid rgba(0, 0, 0, 0.3); 
+  border-radius: 2vh;
+  /*texto*/
+  font-size: 3vh;
 }
 
-.intereses{
-  font-size: 20px;
-}
-
-.pedir, .meInteresa, .devolver{
+/*botones pedir, meinteresa, devolver*/
+button {
   /*formato*/
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 130px;
-  width: 500px;
+  height: 10vh;
+  width: 20vw;
   /*fondo*/
-  background: linear-gradient(90deg, #75a8ff 40%, #b8d9ff);
-  /*borde*/
+  background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
+  /*borde*/ 
   border: 5px solid #b8d9ff; 
-  border-radius: 15px;
+  border-radius: 1vw;
   /*texto*/
+  font-family: 'Kanit', sans-serif;
   color: #2f4668;
-  font-size: 23px;
+  font-size: 2vh;
+  /*transición de color para el hover*/
+  transition: background-color 1s ease-in;
+}
+
+
+button:hover{
+  background: linear-gradient(90deg, #75a8ff 60%, #b8d9ff);
 }
 
 /* css-página */
@@ -125,30 +139,29 @@ html, body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  
-}
+  min-height: 100vh;
+  overflow-x: hidden;
+  gap: 3vh;
 
-/*botones*/
-button {
-  font-family: 'Kanit', sans-serif;
-  color: white;
+  /*user*/
+  user-select: none;
+  
 }
 
 /*etiqueta h1*/
 h1{
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.nameBook{
-
-}
 .detailsBook{
-  font-size: 30px;
+  font-size: 2vh;
   font-weight: 400;
+}
+
+.intereses{
+  font-size: 2vh;
 }
