@@ -41,10 +41,10 @@ font-family: 'Kanit', sans-serif;
 
 Definiciones:
 
-* Página:
+# Página:
 
 * Color Fondo Sólido :
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png)
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png = 100x100)
 ```css
   .{
     background-color: #2a2b3e
