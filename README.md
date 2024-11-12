@@ -71,12 +71,17 @@ font-family: 'Kanit', sans-serif;
     
   * Bordes: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-borde-caja.png" width="20">
 
-      border: 0.15vwpx solid rgba(0, 0, 0, 0.3);
-      border-radius: 2vh; 
+  ```css
+  {
+    border: 0.15vwpx solid rgba(0, 0, 0, 0.3);
+    border-radius: 2vh; 
+  }
+  ```
 
 ### Botones:
 
   * Fondo de botones: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-boton.png" width="20">
+
   ```css
   {
     background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
@@ -85,13 +90,15 @@ font-family: 'Kanit', sans-serif;
   ```
     
   * Botón al hacer Hover: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-hover-boton.png" width="20">
-    ```css
-      button:hover{
-          background: linear-gradient(90deg, #75a8ff 60%, #b8d9ff);
-      }
-    ```
+
+  ```css
+    button:hover{
+        background: linear-gradient(90deg, #75a8ff 60%, #b8d9ff);
+    }
+  ```
 
   * Bordes de los botones: ![#b8d9ff](https://placehold.co/20x20/b8d9ff/b8d9ff.png) `#b8d9ff`
+
   ```css
   {
     border: 0.4vh solid #b8d9ff;
@@ -99,6 +106,7 @@ font-family: 'Kanit', sans-serif;
   ```
 
   * Radio de los Botones:
+
   ```css
   {
     border-radius: 1vw;
@@ -106,13 +114,14 @@ font-family: 'Kanit', sans-serif;
   ```
 
   * Color del texto dentro de los botones: ![#2f4668](https://placehold.co/20x20/2f4668/2f4668.png) `#2f4668`
+
   ```css
   {
     color: #2f4668;
   }
   ```
 
-En general usamos letras blancas (color: `#FFFFFF`) a menos que se especifique, y los fondos negros (`#000000`) pero con distintas opacidades, por ejemplo: `#00000040`, esto es a gusto. 
+En general usamos letras blancas (color: ![#FFFFFF](https://placehold.co/20x20/FFFFFF/FFFFFF.png) `#FFFFFF`) a menos que se especifique, y los fondos negros (![#000000](https://placehold.co/20x20/000000/000000.png) `#000000`) pero con distintas opacidades, por ejemplo: ![#000040](https://placehold.co/20x20/000040/000040.png) `#000040`, esto es a gusto. 
 
 ## Propuesta de diseño
 
