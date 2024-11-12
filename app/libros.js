@@ -3,6 +3,7 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import { LOOP } from '@splidejs/splide';
 
 const fetchData = async () => {
     //const res = await import(<url-servidor>/libros?id=[id]), { method: "GET"});
@@ -16,15 +17,13 @@ const ListOfBooks = async () => {
     
     return (
       <div className="wrapper">
-      <h2 id="basic-example-heading">Basic Example</h2>
+      <h2 id="basic-example-heading">Recomendaciones</h2>
 
       <Splide
-        options={ {  
+        options={ {
+          type: LOOP,
           perPage: 6,
-          height : '10rem',
-          rewind : true,
           gap    : '1rem',
-          direction: 'ltr',
         } }
         aria-labelledby="reactivity-example-heading"
       >
