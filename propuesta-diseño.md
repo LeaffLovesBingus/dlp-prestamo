@@ -55,4 +55,4 @@ Botones:
     Color del texto dentro de los botones:
         color: #2f4668;
 
-En general usamos letras blancas (color: #FFFFFF) a menos que se especifique...
+En general usamos letras blancas (color: #FFFFFF) a menos que se especifique, y los fondos negros (#000000) pero con distintas opacidades, por ejemplo: #00000040, esto es a gusto. 
