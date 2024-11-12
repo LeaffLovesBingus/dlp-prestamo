@@ -106,7 +106,7 @@ button {
   /*fondo*/
   background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
   /*borde*/ 
-  border: 5px solid #b8d9ff; 
+  border: 0.4vh solid #b8d9ff; 
   border-radius: 1vw;
   /*texto*/
   font-family: 'Kanit', sans-serif;
