@@ -117,7 +117,7 @@ En general usamos letras blancas (color: ![#FFFFFF](https://placehold.co/20x20/F
 
 
 ## Boceto Catalogo (Bitácora)
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/mockup1.png)
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/mockup1.jpg)
 
 - Requiere:
   - Arreglo de Información Libros de la Biblioteca
