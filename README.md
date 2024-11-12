@@ -32,12 +32,14 @@ los argumentos de color que recibe la función pueden ir acompañados de un porc
 ```
 
 2. Para importar la fuente utilizada para el diseño propuesta es "Kanit", y esta fue extraida de la web "fonts.google.com", en donde se pueden encontrar distintas tipografías para hacer uso de estas en distintos proyectos con distintos tipos de importes, en este caso, importamos al inicio del globals.css con la linea:
-
+```css
 @import url({link_de_la_fuente});
+```
 
 y luego para hacer uso de esta fuente, dentro de la etiqueta del css respectiva se usa:
-
+```css
 font-family: 'Kanit', sans-serif;
+```
 
 ### Página:
 
