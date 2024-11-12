@@ -10,10 +10,10 @@ DLP library - catálogo y préstamos
 | Definir mockup del catálogo principal | - | ✅ |
 | Definir estructura de datos que almacene los libros y su información | Julio Guerra | ✅ |
 | Prototipo semifuncional | - | 🕐 |
-| Buscar APIs útiles / Pedirle al team de la api | - | ❌ |
-| Aprender a utilizar APIs | - | ❌ |
-| Aprender sobre la lectura de QR | - | ❌ |
-| Definir paleta de colores, estilos, animaciones, etc... | - | ❌ |
+| Buscar APIs útiles / Pedirle al team de la api | - | 🕐 |
+| Aprender a utilizar APIs | - | 🕐 |
+| Aprender sobre la lectura de QR | - | 🕐 |
+| Definir paleta de colores, estilos, animaciones, etc... | - | ✅ |
 | - | - | - |
 
 ## Logotipo
@@ -26,7 +26,7 @@ Detalles a aclarar:
 
 1- La propiedad "background-color" no admite degradados como argumentos de entrada, entonces en su lugar para estos degradados se utilizan la propiedad "background", el cual recibe una función (linear-gradient) con tres argumentos, el ángulo al que se quiere dibujar el degradado, el color de inicio, el color final.
 
-los argumentos de color que recibe la función pueden ir acompalados de un porcentaje de dominancia dentro del degradado si así se desea, adjunto un ejemplo.
+los argumentos de color que recibe la función pueden ir acompañados de un porcentaje de dominancia dentro del degradado si así se desea, adjunto un ejemplo.
 ```css
   {
    background: linear-gradient(180deg, #abcdef 20%, #012345 100%);
@@ -41,11 +41,9 @@ y luego para hacer uso de esta fuente, dentro de la etiqueta del css respectiva 
 
 font-family: 'Kanit', sans-serif;
 
-Definiciones:
+### Página:
 
-# Página:
-
-* Color Fondo Sólido : <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="48">
+* Color Fondo Sólido: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="40">
 
 ```css
   .{
@@ -53,44 +51,68 @@ Definiciones:
   }
 ```
 
-* Colores Fondo con degradado:
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png)
+* Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="40">
+
 ```css
   .{
     background: linear-gradient(180deg, #121219 10%, #6063a4 100%);
   }
 ```
 
-Cajas(Marcos para titulos, descripciones, etc...):
+### Cajas(Marcos para titulos, descripciones, etc...):
 
-    Color Fondo Sólido
-        background-color: rgba(24, 24, 32, 0.4);
+  * Color Fondo Sólido: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="40">
+
+  ```css
+  {
+    background-color: rgba(24, 24, 32, 0.4);
+  }
+  ```
     
-    Bordes:
-        border: 0.15vwpx solid rgba(0, 0, 0, 0.3);
-        border-radius: 2vh; 
+  * Bordes: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="40">
 
-Botones:
+      border: 0.15vwpx solid rgba(0, 0, 0, 0.3);
+      border-radius: 2vh; 
 
-    Fondo de botones
-        background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
-        transition: background-color 1s ease-in; (para transición al hacer hover)
+### Botones:
+
+  * Fondo de botones
+  ```css
+  {
+    background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
+    transition: background-color 1s ease-in; (para transición al hacer hover)
+  }
+  ```
     
-    Botón al hacer Hover:
-        button:hover{
-            background: linear-gradient(90deg, #75a8ff 60%, #b8d9ff);
-        }
+  * Botón al hacer Hover:
+    ```css
+      button:hover{
+          background: linear-gradient(90deg, #75a8ff 60%, #b8d9ff);
+      }
+    ```
 
-    Bordes de los botones:
-        border: 0.4vh solid #b8d9ff;
+  * Bordes de los botones: `#b8d9ff`
+  ```css
+  {
+    border: 0.4vh solid #b8d9ff;
+  }
+  ```
 
-    Radio de los Botones:
-        border-radius: 1vw;
+  * Radio de los Botones:
+  ```css
+  {
+    border-radius: 1vw;
+  }
+  ```
 
-    Color del texto dentro de los botones:
-        color: #2f4668;
+  * Color del texto dentro de los botones: `#2f4668`
+  ```css
+  {
+    color: #2f4668;
+  }
+  ```
 
-En general usamos letras blancas (color: #FFFFFF) a menos que se especifique, y los fondos negros (#000000) pero con distintas opacidades, por ejemplo: #00000040, esto es a gusto. 
+En general usamos letras blancas (color: `#FFFFFF`) a menos que se especifique, y los fondos negros (`#000000`) pero con distintas opacidades, por ejemplo: `#00000040`, esto es a gusto. 
 
 ## Propuesta de diseño
 
