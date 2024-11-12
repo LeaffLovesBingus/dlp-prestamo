@@ -46,9 +46,9 @@ font-family: 'Kanit', sans-serif;
 * Color Fondo Sólido: ![#2a2b3e](https://placehold.co/20x20/2a2b3e/2a2b3e.png) `#2a2b3e`
 
 ```css
-  .{
-    background-color: #2a2b3e
-  }
+
+  background-color: #2a2b3e
+
 ```
 
 * Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="20">
