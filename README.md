@@ -32,12 +32,12 @@ https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sha
 
 
 ## Boceto Catalogo (Bitácora)
-  ...
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/mockup1.png)
 
 - Requiere:
   - Arreglo de Información Libros de la Biblioteca
   
-  ...
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/boceto-prestamo-devolucion.png)
 
 - Requiere:
   - Información Libro Escaneado
