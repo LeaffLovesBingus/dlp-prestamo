@@ -43,7 +43,8 @@ font-family: 'Kanit', sans-serif;
 
 ### Página:
 
-* Color Fondo Sólido: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="40">
+* Color Fondo Sólido: ! [#2a2b3e](https://placehold.co/15x15/2a2b3e/2a2b3e.png) `#2a2b3e`
+<img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="40">
 
 ```css
   .{
@@ -51,7 +52,7 @@ font-family: 'Kanit', sans-serif;
   }
 ```
 
-* Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="40">
+* Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="15">
 
 ```css
   .{
