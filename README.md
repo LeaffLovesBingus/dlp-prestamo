@@ -28,7 +28,9 @@ Detalles a aclarar:
 
 los argumentos de color que recibe la función pueden ir acompalados de un porcentaje de dominancia dentro del degradado si así se desea, adjunto un ejemplo.
 ```css
-  background: linear-gradient(180deg, #abcdef 20%, #012345 100%);
+  {
+   background: linear-gradient(180deg, #abcdef 20%, #012345 100%);
+  }
 ```
 
 2. Para importar la fuente utilizada para el diseño propuesta es "Kanit", y esta fue extraida de la web "fonts.google.com", en donde se pueden encontrar distintas tipografías para hacer uso de estas en distintos proyectos con distintos tipos de importes, en este caso, importamos al inicio del globals.css con la linea:
@@ -43,8 +45,8 @@ Definiciones:
 
 # Página:
 
-* Color Fondo Sólido :
-<img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="48">
+* Color Fondo Sólido : <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="48">
+
 ```css
   .{
     background-color: #2a2b3e
