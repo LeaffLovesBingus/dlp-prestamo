@@ -43,8 +43,7 @@ font-family: 'Kanit', sans-serif;
 
 ### Página:
 
-* Color Fondo Sólido: ![#2a2b3e](https://placehold.co/15x15/2a2b3e/2a2b3e.png) `#2a2b3e`
-<img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="40">
+* Color Fondo Sólido: ![#2a2b3e](https://placehold.co/20x20/2a2b3e/2a2b3e.png) `#2a2b3e`
 
 ```css
   .{
@@ -52,7 +51,7 @@ font-family: 'Kanit', sans-serif;
   }
 ```
 
-* Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="15">
+* Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="20">
 
 ```css
   .{
@@ -62,7 +61,7 @@ font-family: 'Kanit', sans-serif;
 
 ### Cajas(Marcos para titulos, descripciones, etc...):
 
-  * Color Fondo Sólido: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="40">
+  * Color Fondo Sólido: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-caja.png" width="20">
 
   ```css
   {
@@ -70,14 +69,14 @@ font-family: 'Kanit', sans-serif;
   }
   ```
     
-  * Bordes: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="40">
+  * Bordes: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-borde-caja.png" width="20">
 
       border: 0.15vwpx solid rgba(0, 0, 0, 0.3);
       border-radius: 2vh; 
 
 ### Botones:
 
-  * Fondo de botones
+  * Fondo de botones: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-boton.png" width="20">
   ```css
   {
     background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
@@ -85,14 +84,14 @@ font-family: 'Kanit', sans-serif;
   }
   ```
     
-  * Botón al hacer Hover:
+  * Botón al hacer Hover: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-hover-boton.png" width="20">
     ```css
       button:hover{
           background: linear-gradient(90deg, #75a8ff 60%, #b8d9ff);
       }
     ```
 
-  * Bordes de los botones: `#b8d9ff`
+  * Bordes de los botones: ![#b8d9ff](https://placehold.co/20x20/b8d9ff/b8d9ff.png) `#b8d9ff`
   ```css
   {
     border: 0.4vh solid #b8d9ff;
@@ -106,7 +105,7 @@ font-family: 'Kanit', sans-serif;
   }
   ```
 
-  * Color del texto dentro de los botones: `#2f4668`
+  * Color del texto dentro de los botones: ![#2f4668](https://placehold.co/20x20/2f4668/2f4668.png) `#2f4668`
   ```css
   {
     color: #2f4668;
