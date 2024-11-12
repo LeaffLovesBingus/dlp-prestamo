@@ -51,9 +51,9 @@ background-color: #2a2b3e
 
 * Colores Fondo con degradado: <img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png" width="20">
 
-  ```css
-  background: linear-gradient(180deg, #121219 10%, #6063a4 100%);
-  ```
+```css
+background: linear-gradient(180deg, #121219 10%, #6063a4 100%);
+```
 
 ### Cajas(Marcos para titulos, descripciones, etc...):
 
