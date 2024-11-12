@@ -27,8 +27,9 @@ Detalles a aclarar:
 1- La propiedad "background-color" no admite degradados como argumentos de entrada, entonces en su lugar para estos degradados se utilizan la propiedad "background", el cual recibe una función (linear-gradient) con tres argumentos, el ángulo al que se quiere dibujar el degradado, el color de inicio, el color final.
 
 los argumentos de color que recibe la función pueden ir acompalados de un porcentaje de dominancia dentro del degradado si así se desea, adjunto un ejemplo.
-
-background: linear-gradient(180deg, #abcdef 20%, #012345 100%);
+```css
+  background: linear-gradient(180deg, #abcdef 20%, #012345 100%);
+```
 
 2. Para importar la fuente utilizada para el diseño propuesta es "Kanit", y esta fue extraida de la web "fonts.google.com", en donde se pueden encontrar distintas tipografías para hacer uso de estas en distintos proyectos con distintos tipos de importes, en este caso, importamos al inicio del globals.css con la linea:
 
@@ -40,13 +41,23 @@ font-family: 'Kanit', sans-serif;
 
 Definiciones:
 
-Página:
+* Página:
 
-    Color Fondo Sólido
-        background-color: #2a2b3e
+* Color Fondo Sólido :
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png)
+```css
+  .{
+    background-color: #2a2b3e
+  }
+```
 
-    Colores Fondo con degradado
-        background: linear-gradient(180deg, #121219 10%, #6063a4 100%);
+* Colores Fondo con degradado:
+![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-gradiente.png)
+```css
+  .{
+    background: linear-gradient(180deg, #121219 10%, #6063a4 100%);
+  }
+```
 
 Cajas(Marcos para titulos, descripciones, etc...):
 
