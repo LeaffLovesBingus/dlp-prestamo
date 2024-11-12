@@ -44,7 +44,7 @@ Definiciones:
 # Página:
 
 * Color Fondo Sólido :
-![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png = 100x100)
+<img src="https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/color-fondo-solido.png" width="48">
 ```css
   .{
     background-color: #2a2b3e
