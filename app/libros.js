@@ -6,7 +6,7 @@ import '@splidejs/react-splide/css';
 import { LOOP } from '@splidejs/splide';
 
 const fetchData = async () => {
-    //const res = await import(<url-servidor>/libros?id=[id]), { method: "GET"});
+    //const res = await import("https://dlp-api/libros?id=", { method: "GET"});
     const res = await import(".//api-test/ejemplo-1", { method: "GET" });
     const data = res.libros;
     return data;
@@ -32,6 +32,7 @@ const ListOfBooks = async () => {
             <SplideSlide>
               <div className="book-card">
                 <div className="pie">
+                  <img src={`data:image/jpeg;base64,${(libros.caratula)}`} width="100px" height="180px"/>
                   <p className="titulo">{libros.titulo}</p>
                   <p className="autor">{libros.autores}</p>
                 </div>
