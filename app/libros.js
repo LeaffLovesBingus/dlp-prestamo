@@ -6,7 +6,7 @@ import '@splidejs/react-splide/css';
 import { LOOP } from '@splidejs/splide';
 
 const fetchData = async () => {
-    //const res = await import("https://dlp-api/libros?id=", { method: "GET"});
+    //const res = await fetch("https://dlp-api.vercel.app/libros", { method: "GET"});
     const res = await import(".//api-test/ejemplo-1", { method: "GET" });
     const data = res.libros;
     return data;
@@ -14,7 +14,9 @@ const fetchData = async () => {
   
 const ListOfBooks = async () => {
     const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
-    
+    const dataParsed = await data.json();
+
+
     return (
       <div className="wrapper">
       <h2 id="basic-example-heading">Recomendaciones</h2>
@@ -27,8 +29,8 @@ const ListOfBooks = async () => {
         } }
         aria-labelledby="reactivity-example-heading"
       >
-        {data.length > 0 &&
-            data.map((libros) =>(
+        {
+            dataParsed.map((libros) =>(
             <SplideSlide>
               <div className="book-card">
                 <div className="pie">
