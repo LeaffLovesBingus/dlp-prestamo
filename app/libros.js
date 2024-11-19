@@ -2,9 +2,6 @@
 'use client'
 import fetchData from ".//api";
 import React from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
-import { LOOP } from '@splidejs/splide';
 
   
 const ListOfBooks = async () => {
