@@ -25,16 +25,16 @@ const ListOfBooks = async () => {
         aria-labelledby="reactivity-example-heading"
       >
         {
-            ejemplo.libros?.map((books) =>(
-            <SplideSlide key = {books.id}>
-              <div className="book-card">
-                <div className="pie">
-                  <img src={`data:image/jpeg;base64,${(books.caratula)}`} width="100px" height="180px"/>
-                  <p className="titulo">{books.titulo}</p>
-                  <p className="autor">{books.autores}</p>
-                </div>
+          ejemplo.libros?.map((books) =>(
+          <SplideSlide key = {books.id}>
+            <div className="book-card">
+              <div className="pie">
+                <img src={`data:image/jpeg;base64,${(books.caratula)}`} width="100px" height="180px"/>
+                <p className="titulo">{books.titulo}</p>
+                <p className="autor">{books.autores}</p>
               </div>
-            </SplideSlide>
+            </div>
+          </SplideSlide>
         ) ) }
       </Splide>
     </div>
