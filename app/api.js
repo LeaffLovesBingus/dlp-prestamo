@@ -2,9 +2,9 @@
 
 const fetchData = async () => {
     try {
-      const data = await fetch("https://dlp-api.vercel.app/libros", { method: "GET" });
+      const res = await fetch("https://dlp-api.vercel.app/libros", { method: "GET" });
       //const res = await import(".//api-test/ejemplo-1", { method: "GET" });
-      //const data = res.libros;
+      const data = res.libros;
       const data_parsed = await data.json();
       
       if (response.ok) {

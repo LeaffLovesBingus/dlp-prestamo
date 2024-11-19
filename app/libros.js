@@ -1,6 +1,7 @@
 // https://github.com/vercel/next.js/issues/48344#issuecomment-1653612812
 'use client'
 import fetchData from ".//api";
+import ejemplo from "@/app/api-test/ejemplo"
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
@@ -8,8 +9,8 @@ import { LOOP } from '@splidejs/splide';
 
   
 const ListOfBooks = async () => {
-    const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
-    //const dataParsed = await dconsole.log('Fetching data...');  
+    //const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
+    //const data = libros;
 
     return (
       <div className="wrapper">
@@ -24,8 +25,8 @@ const ListOfBooks = async () => {
         aria-labelledby="reactivity-example-heading"
       >
         {
-            data?.map((books) =>(
-            <SplideSlide>
+            ejemplo.libros?.map((books) =>(
+            <SplideSlide key = {books.id}>
               <div className="book-card">
                 <div className="pie">
                   <img src={`data:image/jpeg;base64,${(books.caratula)}`} width="100px" height="180px"/>
