@@ -1,5 +1,4 @@
 // https://github.com/vercel/next.js/issues/48344#issuecomment-1653612812
-'use client'
 import fetchData from ".//api";
 import React from 'react';
 
