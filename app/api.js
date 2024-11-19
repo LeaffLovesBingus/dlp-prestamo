@@ -6,6 +6,7 @@ const fetchData = async () => {
       //const res = await import(".//api-test/ejemplo-1", { method: "GET" });
       //const data = res.libros;
       const data_parsed = await data.json();
+      console.log('Todo bien');
       
       if (response.ok) {
         console.log('Todo bien');
