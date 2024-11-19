@@ -10,7 +10,7 @@ const ListOfBooks = async () => {
       <div className="wrapper">
       <h2 id="basic-example-heading">Recomendaciones</h2>
         {
-          data?.map(books =>(
+          data.libros?.map(books =>(
               <div className="book-card">
                 <div className="pie">
                   <img src={`data:image/jpeg;base64,${(books.caratula)}`} width="100px" height="180px"/>
