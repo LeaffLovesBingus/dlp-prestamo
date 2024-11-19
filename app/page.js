@@ -6,7 +6,6 @@ export const metadata = {
 };
   
 export default function Home() {
-    const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
 
     return (
       <>
