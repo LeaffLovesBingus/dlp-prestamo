@@ -1,21 +1,15 @@
 // https://github.com/vercel/next.js/issues/48344#issuecomment-1653612812
 'use client'
+import fetchData from ".//api";
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { LOOP } from '@splidejs/splide';
 
-const fetchData = async () => {
-    //const res = await fetch("https://dlp-api.vercel.app/libros", { method: "GET"});
-    const res = await import(".//api-test/ejemplo-1", { method: "GET" });
-    const data = res.libros;
-    return data;
-  };
   
 const ListOfBooks = async () => {
     const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
-    const dataParsed = await data.json();
-
+    //const dataParsed = await dconsole.log('Fetching data...');  
 
     return (
       <div className="wrapper">
@@ -30,13 +24,13 @@ const ListOfBooks = async () => {
         aria-labelledby="reactivity-example-heading"
       >
         {
-            dataParsed.map((libros) =>(
+            data?.map((books) =>(
             <SplideSlide>
               <div className="book-card">
                 <div className="pie">
-                  <img src={`data:image/jpeg;base64,${(libros.caratula)}`} width="100px" height="180px"/>
-                  <p className="titulo">{libros.titulo}</p>
-                  <p className="autor">{libros.autores}</p>
+                  <img src={`data:image/jpeg;base64,${(books.caratula)}`} width="100px" height="180px"/>
+                  <p className="titulo">{books.titulo}</p>
+                  <p className="autor">{books.autores}</p>
                 </div>
               </div>
             </SplideSlide>
