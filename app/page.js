@@ -1,4 +1,4 @@
-import fetchData from ".//api";
+import ListOfBooks from ".//libros";
 
 export const metadata = {
     title: "Home",
@@ -12,6 +12,7 @@ export default function Home() {
       <>
         <div className="container">
           <h1 className="title">Hola mundo!</h1>
+          <ListOfBooks/>
           <h1 className="title">Que pasa realmente?!</h1>
           <h1 className="title">Adios mundo!</h1>
         </div>
