@@ -1,32 +1,27 @@
-import BookCard from "./book_cards/book-cards.js"
-import libros from "./libros.json"
-import Image from "next/image.js";
+"use client";
+import BarraBusqueda from "./components/portada/BarraDeBusqueda";
+import BotonCatalogo from "./components/portada/BotonCatalogo";
+import Logotipo from "./components/portada/Logotipo";
+import BotonDonacion from "./components/portada/BotonDonar";
+import caratulas from "./components/portada/AnimacionCaratulas";
 
-export const metadata = {
-    title: "DLP - catálogo",
-    description: "Catálago de la biblioteca independiente DLP library",
-};
+// 𝓘'𝓶 𝓯𝓮𝓮𝓵𝓲𝓷𝓰 𝓴𝓲𝓷𝓭𝓪 𝓯𝓻𝓮𝓪𝓴𝔂
   
 export default function Home() {
-    libros.map((item) => console.log(item.titulo))
 
     return (
-    <>
-        <div className="container">
-        {/*<h1 className="title">catálogo**</h1>*/}
-        <Image
-            src = "/public/assets/logoBlanco.png"
-            alt = "Logo épico"
-            width = {500}
-            height = {250}
-        />
-        <div className="book-shelf">
-            {libros.map((item, cont) => 
-            (<BookCard libro={{item}} key={cont}></BookCard>
-            ))}
-        </div>
-        </div>
+    <>  
+        <header className="header">
+            <BotonDonacion/>
+            <BarraBusqueda/>
+        </header>
+
+        <Logotipo/>
+        <h1> 39 personas están leyendo ahora mismo! </h1>
+
+        <footer className="footer">
+            <BotonCatalogo/>
+        </footer>
     </>
     );
 }
-  

@@ -14,3 +14,7 @@ https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sha
 
 ![](https://github.com/LeaffLovesBingus/dlp-prestamo/blob/main/Graphics/Catalogo.png)
 
+## Componentes Chakra
+- Splider
+- Owl Carrousel (lento)
+
