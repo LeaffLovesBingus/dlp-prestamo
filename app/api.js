@@ -6,8 +6,6 @@ const fetchData = async () => {
         headers: {'Accept': 'application/json'
         },
       });
-      //.then(response => response.json())
-      //.then(response => console.log(JSON.stringify(response)))
 
       if (response.ok) {
         console.log('Todo bien');

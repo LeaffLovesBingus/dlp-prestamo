@@ -1,5 +1,4 @@
 import ListOfBooks from ".//libros";
-import fetchData from ".//api";
 
 export const metadata = {
     title: "Home",
