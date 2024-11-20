@@ -1,4 +1,5 @@
 import ListOfBooks from ".//libros";
+import fetchData from ".//api";
 
 export const metadata = {
     title: "Home",
@@ -7,6 +8,8 @@ export const metadata = {
 
   
 export default function Home() {
+  //const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
+
   return (
     <>
       <div className="container">
