@@ -9,20 +9,29 @@ function TarjetaLibro({ infoLibro }){
         <Card
             borderRadius="md" 
             boxShadow="md" 
-            overflow="hidden" 
+            overflow="hidden"
+            p={4}
             _hover={{ transform: "scale(1.02)", transition: "0.3s" }}
-
         >
             <CardBody>
                 <img
                     className="caratula"
                     src = {`data:image/jpeg;base64,${(infoLibro.caratula)}`} 
-                    width="100%" 
-                    height="300px" 
-                    objectfit="cover"
+                    style={{
+                        width: "100%",
+                        height: "45vh",
+                        objectFit: "cover",
+                        borderRadius: "10px"
+                    }}
                 />
             </CardBody>
-            <CardFooter className="labelLibro">
+            <CardFooter 
+                className="labelLibro"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                marginTop="0.5vh"
+            >
                 {infoLibro.titulo}
             </CardFooter>
         </Card>

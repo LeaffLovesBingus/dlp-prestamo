@@ -42,6 +42,18 @@ ul {
   font-weight: 300;
 }
 
+html, body {
+  height: 100%;
+  overflow-y: scroll; /* Permite el scroll */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+
 a:link {
   text-decoration: none;
 }

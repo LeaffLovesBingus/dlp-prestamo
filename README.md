@@ -16,5 +16,5 @@ https://drive.google.com/drive/folders/1jMX7kN7D6zTGZekeNZgAgEqKPmEGnNmA?usp=sha
 
 ## Componentes Chakra
 - Splider
-- Owl Carrousel (lento)
-
+- Box
+- Card / CardFooter / CardHeader
