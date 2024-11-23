@@ -1,4 +1,3 @@
-import logo from './data/logo.png';
 import Image from 'next/image';
 
 export const metadata = {
@@ -27,9 +26,9 @@ export default function Home() {
         <div className="titleContainer">
           <Image
             className = "logotipo"
-            src = "/data/logo.png"
-            width = {30}
-            height = {30}
+            src = "/assets/logo.png"
+            width = {170}
+            height = {170}
             draggable = "false"
           />
           <h1 className="title">DLP Library</h1>
@@ -37,7 +36,7 @@ export default function Home() {
 
         <div className='ir-a-catalogo'>
           <button1 className='icon'>
-            <span class="material-symbols-outlined">arrow_upward_alt</span>
+            <span class="material-symbols-outlined">arrow_upward_alt</span> Ir al Catálogo Original
           </button1>
         </div>
       </header>
@@ -45,7 +44,13 @@ export default function Home() {
       <div className="allInfo">
         
         <div className="bookImage">
-          <img src ={logo}/>
+          <Image
+              className = "logotipo"
+              src = "/assets/papelucho.png"
+              width = {300}
+              height = {400}
+              draggable = "false"
+          />
         </div>
 
         <div className="bookInfo">
