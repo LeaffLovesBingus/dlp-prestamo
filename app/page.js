@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
     title: "Home",
@@ -10,7 +11,7 @@ export default function Home() {
   /* acá deberiamos recuperar el titulo del líbro con su respectiva info
   mientras, tengamos variables de ejemplo... */
   
-  let bookTitle = "Mi libro";
+  let bookTitle = "Un libro deaa";
   let bookAutor = "autor";
   let bookGenere = "género";
   let existencias = 0;
@@ -24,33 +25,36 @@ export default function Home() {
       <header className='header'>
 
         <div className="titleContainer">
-          <Image
-            className = "logotipo"
-            src = "/assets/logo.png"
-            width = {170}
-            height = {170}
-            draggable = "false"
-          />
+          <div className="imageWrapper-01">
+            <Image
+              className="logo"
+              src="/assets/logo.png"
+              layout="fill"
+              objectFit="cover"
+              draggable={false}
+            />
+          </div>
           <h1 className="title">DLP Library</h1>
         </div>
 
         <div className='ir-a-catalogo'>
           <button1 className='icon'>
-            <span class="material-symbols-outlined">arrow_upward_alt</span> Ir al Catálogo Original
+            <span className="material-symbols-outlined">arrow_upward_alt</span> Ir al Catálogo Original
           </button1>
-        </div>
+        </div>  
       </header>
 
       <div className="allInfo">
-        
         <div className="bookImage">
-          <Image
-              className = "logotipo"
-              src = "/assets/papelucho.png"
-              width = {300}
-              height = {400}
-              draggable = "false"
-          />
+          <div className="imageWrapper-02">
+            <Image
+              className="caratula"
+              src="/assets/papelucho.png"
+              layout="fill"
+              objectFit="cover"
+              draggable={false}
+            />
+          </div>
         </div>
 
         <div className="bookInfo">
@@ -71,9 +75,11 @@ export default function Home() {
         
         <div className='solicitud'>
 
-          <button className='pedir'>
-            <h1>Pedir</h1>
-          </button>
+          <Link href="/pedir" style={{ textDecoration: 'none' }}>
+            <button className='pedir'>
+              <h1>Pedir</h1>
+            </button>
+          </Link>
 
           <button className='meInteresa'>
             <h1>Me Interesa</h1>
