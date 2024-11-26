@@ -1,7 +1,9 @@
+import { Parametro } from "./libro/route";
 
-const fetchData = async () => {
+
+export async function fetchLibro(id){
     try {
-      const response = await fetch("/api/libros", { 
+      const response = await fetch("/api/libro", { 
         method: "GET", 
         headers: {'Accept': 'application/json'
         },
@@ -22,5 +24,3 @@ const fetchData = async () => {
     }
     
 };
-
-export default fetchData;

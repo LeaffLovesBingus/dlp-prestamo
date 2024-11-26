@@ -1,6 +1,7 @@
 // https://github.com/vercel/next.js/issues/48344#issuecomment-1653612812
 'use client'
-import fetchData from ".//api";
+import { fetchLibro } from "./api/fetch_libro";
+import { fetchCatalogo } from "./fetch_libros";
 import React, { useEffect, useState } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
@@ -31,22 +32,28 @@ import { LOOP } from '@splidejs/splide';
 
 // export default ListOfBooks;
 
+function libro_id(id, libros){
+  return libros.find(libro => libro.id === id);
+}
+
 function ListOfBooks() {
   // const data = await fetchData(); // Esperamos a que la función fetchData termine de ejecutarse
   //const data = ejemplo.libros;
   const [data, setData] = useState([])
   useEffect(() => {
-    fetchData().then((res) => setData(res));
+    fetchCatalogo("/api/libros").then((res) => setData(res));
     
   },[])
 
-  //const handleClick = async () => {
-  //  const res = await fetchData()
-  //  console.log(res)
-  //}
-  //<button onClick={handleClick}>ACa</button>
+  const handleClick = async () => {
+    const res = libro_id(1, data.libros);
+    console.log(res);
+  }
+  
   return (
-    <><div className="wrapper">
+    <> <button onClick={handleClick}>ACa</button>
+
+      <div className="wrapper">
       <h2 id="basic-example-heading">Recomendaciones</h2>
         <Splide
           options={{
