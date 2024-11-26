@@ -23,7 +23,8 @@ const Vitrina = () => {
         <Box
             maxW="85vw"
             mx="auto"
-            mt={8}
+            mt="5vh"
+            mb="10vh"
             overflow="visible"
             position="relative"
         >
@@ -31,13 +32,13 @@ const Vitrina = () => {
                 as="h2" 
                 size="lg" 
                 textAlign="left" 
-                mb={4}
+                mb="4vh"
             >
                 Recomendaciones
             </Heading>
             <Splide
                 options={{
-                    type: "loop",
+                    type: LOOP,
                     perPage: 6,
                     gap: "1rem",
                     breakpoints: {
@@ -54,7 +55,10 @@ const Vitrina = () => {
                 {data.libros?.slice(0, 12).map((libro) => {
                     return (
                         <SplideSlide key={libro.id}>
-                            <Link href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}>
+                            <Link 
+                                href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}
+                                style={{ textDecoration: "none", color: "inherit" }}
+                            >
                                 <TarjetaLibro infoLibro={libro}/>
                             </Link>
                         </SplideSlide>

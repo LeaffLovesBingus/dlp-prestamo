@@ -23,7 +23,7 @@ const Tablero = () => {
                     paddingX="5vw"
                     paddingY="8vh"
                     mx="auto"
-                    mt={8}
+                    mt="0vh"
                     position="relative"
                     bg="rgba(0, 0, 0, 0.3)"
                     minH="50vh"

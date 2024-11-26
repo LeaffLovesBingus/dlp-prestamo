@@ -4,6 +4,7 @@ import BotonDonacion from "../components/portada/BotonDonar";
 import Vitrina from "../components/catalogo/Vitrina";
 import Tablero from "../components/catalogo/Tablero";
 import BotonVolver from "../components/catalogo/BotonVolver";
+import Link from "next/link";
 
 
 export default function catalogo() {
@@ -15,6 +16,8 @@ export default function catalogo() {
                 <BotonDonacion/>
                 <BarraBusqueda/>
                 <BotonVolver/>
+                <Link href=":3"><button>botondelsexo</button></Link>
+                
             </header>
 
             <Vitrina/>

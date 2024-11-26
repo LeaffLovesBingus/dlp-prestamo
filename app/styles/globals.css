@@ -14,7 +14,7 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  background-color: #34364d; /*#2a2b3f*/
+  /*background-color: #34364d; #2a2b3f*/
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: #fcfffd;
@@ -43,6 +43,7 @@ ul {
 }
 
 html, body {
+  background: linear-gradient(180deg, #1b1b27 10%, #6063a4 100%);
   height: 100%;
   width: 100%;
   overflow-y: scroll; /* Permite el scroll */
@@ -74,6 +75,29 @@ a:active {
   text-decoration: none;
 }
 
+.container-404-general {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.boton {
+  font-family: 'Kanit';
+  background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
+  transition: background-color 1s ease-in;
+  border: 0.4vh solid #b8d9ff;
+  border-radius: 1vw;
+  color: #2f4668;
+  font-weight: 420;
+  font-size: large;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
 
 /* End simple reset */
 

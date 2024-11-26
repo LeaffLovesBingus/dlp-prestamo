@@ -40,7 +40,10 @@ const GrillaTablero = () => {
             >
                 {data.libros?.map((libro) => {
                     return (
-                        <Link href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}>
+                        <Link 
+                            href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}
+                            style={{ textDecoration: "none", color: "inherit" }}
+                        >
                             <GridItem w='100%' h='100%' key={libro.id}>
                                 <TarjetaLibro infoLibro={libro}/>
                             </GridItem>
