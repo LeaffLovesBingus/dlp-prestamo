@@ -7,12 +7,11 @@ const HeaderTablero = () => {
 
     return (
         <Box
-            marginX="4vw"
             marginTop="5vh"
             position="relative"
             bg="rgba(0, 0, 0, 0.3)"
             minH="12vh"
-            w="90vw"
+            w="85vw"
             borderRadius="15px"
             display="flex"
             alignItems="center"

@@ -21,10 +21,10 @@ const Vitrina = () => {
 
     return (
         <Box
-            maxW="90vw"
+            maxW="85vw"
             mx="auto"
             mt={8}
-            overflow="auto"
+            overflow="visible"
             position="relative"
         >
             <Heading 
@@ -37,7 +37,7 @@ const Vitrina = () => {
             </Heading>
             <Splide
                 options={{
-                    type: LOOP,
+                    type: "loop",
                     perPage: 6,
                     gap: "1rem",
                     breakpoints: {
@@ -48,17 +48,16 @@ const Vitrina = () => {
                     pagination: false,
                     arrows: true,
                     focus: "left",
-                    fade: true
                 }}
-                aria-labelledby="reactivity-example-heading"
+                aria-labelledby="carousel-heading"
             >
                 {data.libros?.slice(0, 12).map((libro) => {
                     return (
-                        <Link href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}>
-                            <SplideSlide key={libro.id}>
+                        <SplideSlide key={libro.id}>
+                            <Link href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}>
                                 <TarjetaLibro infoLibro={libro}/>
-                            </SplideSlide>
-                        </Link>
+                            </Link>
+                        </SplideSlide>
                     );
                 })}
             </Splide>

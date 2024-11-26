@@ -6,12 +6,19 @@ import GrillaTablero from "./GrillaTablero";
 
 const Tablero = () => {
     return (
-        <>
-            <HeaderTablero/>
+        <>  
+            <Box
+                position="relative"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+            >
+                <HeaderTablero/>
+            </Box>
 
             <Box mt="5vh" >
                 <Box
-                    w="90vw"
+                    w="85vw"
                     h="110vh"
                     paddingX="5vw"
                     paddingY="8vh"
