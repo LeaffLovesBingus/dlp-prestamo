@@ -16,7 +16,7 @@ export default function catalogo() {
                 <BotonDonacion/>
                 <BarraBusqueda/>
                 <BotonVolver/>
-                <Link href=":3"><button>botondelsexo</button></Link>
+                <Link href="𝓘'𝓶 𝓯𝓮𝓮𝓵𝓲𝓷𝓰 𝓴𝓲𝓷𝓭𝓪 𝓯𝓻𝓮𝓪𝓴𝔂"><button>404</button></Link>
                 
             </header>
 

@@ -5,6 +5,7 @@ const BarraBusqueda = () => {
     const [busqueda, setBusqueda] = useState('');
 
     const handleSearch = (event) => {
+        /*hace algo*/ 
         setBusqueda(event.target.value);
         console.log(event.target.value);
     };

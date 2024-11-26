@@ -86,6 +86,7 @@ a:active {
 
 .boton {
   font-family: 'Kanit';
+  cursor: pointer;
   background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
   transition: background-color 1s ease-in;
   border: 0.4vh solid #b8d9ff;
