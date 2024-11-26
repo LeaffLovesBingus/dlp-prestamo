@@ -8,6 +8,7 @@
 
 html {
   height: 100%;
+  width: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -17,7 +18,8 @@ html {
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: #fcfffd;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -37,16 +39,13 @@ h6,
 p,
 ol,
 ul {
-  margin: 0;
-  padding: 0;
   font-weight: 300;
 }
 
 html, body {
   height: 100%;
+  width: 100%;
   overflow-y: scroll; /* Permite el scroll */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 html::-webkit-scrollbar {
@@ -70,15 +69,6 @@ a:active {
   text-decoration: none;
 }
 
-ol,
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* End simple reset */
 

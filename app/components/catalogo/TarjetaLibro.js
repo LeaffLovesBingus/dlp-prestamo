@@ -7,10 +7,14 @@ function TarjetaLibro({ infoLibro }){
 
     return (
         <Card
-            borderRadius="md" 
-            boxShadow="md" 
+            borderRadius="15px" 
+            boxShadow="outline" 
             overflow="hidden"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
             p={4}
+            bg="rgba(0, 0, 0, 0.3)"
             _hover={{ transform: "scale(1.02)", transition: "0.3s" }}
         >
             <CardBody>
@@ -18,9 +22,9 @@ function TarjetaLibro({ infoLibro }){
                     className="caratula"
                     src = {`data:image/jpeg;base64,${(infoLibro.caratula)}`} 
                     style={{
-                        width: "100%",
-                        height: "45vh",
-                        objectFit: "cover",
+                        width: "13vw",
+                        height: "38vh",
+                        objectFit: "fill",
                         borderRadius: "10px"
                     }}
                 />

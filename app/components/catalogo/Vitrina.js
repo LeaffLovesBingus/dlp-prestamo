@@ -14,7 +14,7 @@ const Vitrina = () => {
             maxW="90vw"
             mx="auto"
             mt={8}
-            overflow="hidden"
+            overflow="auto"
             position="relative"
         >
             <Heading 
@@ -35,10 +35,10 @@ const Vitrina = () => {
                         768: { perPage: 3 },
                         480: { perPage: 2 },
                     },
-                    pagination: true,
+                    pagination: false,
                     arrows: true,
-                    focus: "center",
-                    fade: true,
+                    focus: "left",
+                    fade: true
                 }}
                 aria-labelledby="reactivity-example-heading"
             >

@@ -1,36 +1,34 @@
 "use client";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import HeaderTablero from "./HeaderTablero";
+import GrillaTablero from "./GrillaTablero";
 
 
 const Tablero = () => {
     return (
-        <Box mt="10vh" >
-            <Heading 
-                as="h2" 
-                size="lg" 
-                textAlign="left" 
-                mb={4}
-            >
-                Todos los libros
-            </Heading>
-            <Box
-                maxW="90vw"
-                mx="auto"
-                mt={8}
-                overflowY="scroll"
-                position="relative"
-                bg="rgba(0, 0, 0, 0.3)"
-                minH="60vh"
-                borderRadius="15px"
-                sx={{
-                    '::-webkit-scrollbar': { display: 'none' },
-                    'msOverflowStyle': 'none',
-                    'scrollbarWidth': 'none',
-                }}
-            >
+        <>
+            <HeaderTablero/>
 
+            <Box mt="5vh" >
+                <Box
+                    w="90vw"
+                    h="110vh"
+                    paddingX="5vw"
+                    paddingY="8vh"
+                    mx="auto"
+                    mt={8}
+                    position="relative"
+                    bg="rgba(0, 0, 0, 0.3)"
+                    minH="50vh"
+                    borderRadius="15px"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                >
+                    <GrillaTablero/>
+                </Box>
             </Box>
-        </Box>
+        </>
     );
 }
 
