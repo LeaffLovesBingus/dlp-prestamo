@@ -1,21 +1,27 @@
-import ListOfBooks from ".//libros";
+"use client";
+import BarraBusqueda from "./components/portada/BarraDeBusqueda";
+import BotonCatalogo from "./components/portada/BotonCatalogo";
+import Logotipo from "./components/portada/Logotipo";
+import BotonDonacion from "./components/portada/BotonDonar";
+import Caratulas from "./components/portada/AnimacionCaratulas";
 
-export const metadata = {
-    title: "Home",
-    description: "Esta es la página de inicio",
-};
   
 export default function Home() {
 
     return (
-      <>
-        <div className="container">
-          <h1 className="title">Hola mundo!</h1>
-          <ListOfBooks/>
-          <h1 className="title">Que pasa realmente?!</h1>
-          <h1 className="title">Adios mundo!</h1>
-        </div>
-      </>
+    <>  
+        <header className="header">
+            <BotonDonacion/>
+            <BarraBusqueda/>
+        </header>
+
+        <Logotipo/>
+        <h1> 39 personas están leyendo ahora mismo! </h1>
+        {/* <Caratulas/> */}
+
+        <footer className="footer">
+            <BotonCatalogo/>
+        </footer>
+    </>
     );
-  }
-  
+}
