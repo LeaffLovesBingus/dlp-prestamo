@@ -1,10 +1,19 @@
 "use client";
 import { Grid, GridItem, Box } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import TarjetaLibro from "./TarjetaLibro";
-import libros from "../libros.json"
+import { fetchCatalogo } from "../endpoint";
+import Link from "next/link";
 
 
 const GrillaTablero = () => {
+
+    const [ data, setData ] = useState([]);
+    useEffect(
+        () => {
+            fetchCatalogo().then((res) => setData(res));
+        }, []
+    );
 
     return (
         <Box
@@ -29,11 +38,13 @@ const GrillaTablero = () => {
                 rowGap="3vw"
                 columnGap="3vh"
             >
-                {libros?.map((libro, index) => {
+                {data.libros?.map((libro) => {
                     return (
-                        <GridItem w='100%' h='100%' key={index}>
-                            <TarjetaLibro infoLibro={libro}/>
-                        </GridItem>
+                        <Link href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}>
+                            <GridItem w='100%' h='100%' key={libro.id}>
+                                <TarjetaLibro infoLibro={libro}/>
+                            </GridItem>
+                        </Link>
                     );
                 })}
                 

@@ -7,16 +7,17 @@ const HeaderTablero = () => {
 
     return (
         <Box
-            mt="5vh"
+            marginX="4vw"
+            marginTop="5vh"
             position="relative"
             bg="rgba(0, 0, 0, 0.3)"
             minH="12vh"
-            w="85vw"
+            w="90vw"
             borderRadius="15px"
             display="flex"
             alignItems="center"
             justifyContent="space-between"
-            px="6vw"
+            paddingX="6vw"
         >
             <Heading 
                 as="h1" 

@@ -1,13 +1,23 @@
 "use client";
-import libros from "../libros.json";
+import { fetchCatalogo } from "../endpoint";
 import '@splidejs/react-splide/css';
 import TarjetaLibro from './TarjetaLibro';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { LOOP } from '@splidejs/splide';
 import { Box, Heading } from '@chakra-ui/react';
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
   
 const Vitrina = () => {
+
+    const [ data, setData ] = useState([]);
+    useEffect(
+        () => {
+            fetchCatalogo().then((res) => setData(res));
+        }, []
+    );
+
 
     return (
         <Box
@@ -42,11 +52,13 @@ const Vitrina = () => {
                 }}
                 aria-labelledby="reactivity-example-heading"
             >
-                {libros?.slice(0, 12).map((libro, index) => {
+                {data.libros?.slice(0, 12).map((libro) => {
                     return (
-                        <SplideSlide key={index}>
-                            <TarjetaLibro infoLibro={libro}/>
-                        </SplideSlide>
+                        <Link href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}>
+                            <SplideSlide key={libro.id}>
+                                <TarjetaLibro infoLibro={libro}/>
+                            </SplideSlide>
+                        </Link>
                     );
                 })}
             </Splide>
