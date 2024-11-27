@@ -1,25 +1,38 @@
 "use client";
 import { useSearchParams } from 'next/navigation';
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchLibro } from '../components/endpoint';
 
 export default function Pdrl() {
     const searchParams = useSearchParams();
-    let id = searchParams.get("id");
 
-    const [ data, setData ] = useState(null);
-    useEffect(
-        () => {
-            fetchLibro(id).then((res) => (setData(res.libros[0])))
-        }, []
+    const [id, setId] = useState(null);
+    useEffect(() => {
+        setId(searchParams.get("id"));
+    }, [searchParams]);
+
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        if (id) {
+            fetchLibro(id).then((res) => setData(res.libros[0]));
+        }
+    }, [id]);
+
+    if (!id) {
+        return <p>Cargando...</p>;
+    }
+
+    return (
+        <div>
+            {data?(
+                <>
+                    <h1>{data.titulo}</h1>
+                    <p>{data.autores}</p>
+                </>
+            ) : (
+                <p>Cargando datos del libro...</p>
+            )}
+        </div>
     );
-
-    return(
-        <Suspense>
-            <div>
-                {data?.titulo}
-                {data?.autores}
-            </div>
-        </Suspense>
-    )
-};
+}
