@@ -48,7 +48,7 @@ export async function fetchCatalogo() {
     }
   }
   
-  export async function prestamoDevolucion(id, usuario,accion) {
+  export async function prestamoDevolucion(id, usuario, accion) {
       try {
         const response = await fetch(`/api/prestamo`, { 
           method: "POST", 

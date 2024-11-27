@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
-import { fetchLibro } from '../components/endpoint.js';
+import { fetchLibro, prestamoDevolucion } from '../components/endpoint.js';
 import { Suspense } from 'react';
 
 function GetLibro() {
