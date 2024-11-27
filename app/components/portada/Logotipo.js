@@ -5,7 +5,7 @@ const Logotipo = ({ isPortada }) => {
     return (
         <Box
             style={{
-                maxWidth: isPortada ? "40vw" : "30vw",
+                maxHeight: isPortada ? "40vh" : "30vh",
                 height: "auto",
             }}
         >

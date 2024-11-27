@@ -101,7 +101,7 @@ a:active {
 /* Cosos */
 
 .mentira {
-  font-size: clamp(1px, 4vh, 4vh);
+  font-size: clamp(1px, 3vh, 3vh);
 }
 
 .headerCatalogo {
@@ -140,7 +140,7 @@ a:active {
 
 .botonVolver2 {
   height: 7vh;
-  aspect-ratio: 5/1;
+  aspect-ratio: 3/1;
   background: rgba(0, 0, 0, 0.3);
   color: rgb(241, 241, 241);
   border: 0.4vh solid #ffffff80;
