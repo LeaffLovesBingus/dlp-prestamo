@@ -13,6 +13,7 @@ function TarjetaLibro({ infoLibro }){
             display="flex"
             alignItems="center"
             justifyContent="center"
+            minWidth="100%"
             padding="1vw"
             bg="rgba(0, 0, 0, 0.3)"
             border="0.15vw solid rgba(0, 0, 0, 0.3)"
@@ -24,9 +25,9 @@ function TarjetaLibro({ infoLibro }){
                     className="caratula"
                     src = {`data:image/jpeg;base64,${(infoLibro.caratula)}`} 
                     style={{
-                        width: "10vw",
-                        height: "30vh",
-                        objectFit: "fill",
+                        width: "100%",
+                        height: "40vh",
+                        objectFit: "cover",
                         borderRadius: "10px"
                     }}
                 />

@@ -105,7 +105,7 @@ const Vitrina = () => {
             <Splide
                 options={{
                     type: LOOP,
-                    perPage: 6,
+                    perPage: 4,
                     gap: "1rem",
                     breakpoints: {
                         1024: { perPage: 4 },
