@@ -56,7 +56,7 @@ const Vitrina = () => {
                     return (
                         <SplideSlide key={libro.id}>
                             <Link 
-                                href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}
+                                href={`/pdrl?id=${libro.id}`}
                                 style={{ textDecoration: "none", color: "inherit" }}
                             >
                                 <TarjetaLibro infoLibro={libro}/>
