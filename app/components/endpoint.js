@@ -1,24 +1,24 @@
-export async function fetchCatalogo() {
+export async function fetchCatalogo(id) {
     try {
-        const response = await fetch("./components/api/libros", { 
-            method: "GET", 
-            headers: {'Accept': 'application/json'
-            },
+        const response = await fetch(`/api/libros?id=${id}`, { 
+        method: "GET", 
+        headers: {'Accept': 'application/json'
+        },
         });
-    
+
         if (response.ok) {
-            console.log('Todo bien');
+        console.log('Todo bien');
         } else {
-            console.log('Respuesta de red OK pero respuesta de HTTP no OK');
+        console.log('Respuesta de red OK pero respuesta de HTTP no OK');
         };
-    
+
         const json = await response.json();
         console.log(json);
         return json;
-    
-    
-        } catch (error) {
+
+    } catch (error) {
         console.log('Hubo un problema con la petición Fetch: ' + error.message);
     }
 
-  };
+};
+  
