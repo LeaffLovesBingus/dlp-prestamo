@@ -1,8 +1,11 @@
 export async function GET(params) {
     let url = `https://dlp-api.vercel.app/libros`;
-    const id = params.url.split("?id=")[1];
-    console.log(id);
-    if (!isNaN(parseInt(id))) url = `https://dlp-api.vercel.app/libros?id=${id}`;
+    const reqUrl = params.url;
+    if (reqUrl.includes("?id=")) {
+        const id = reqUrl.split("?id=")[1];
+        if (!isNaN(parseInt(id))) url = `https://dlp-api.vercel.app/libros?id=${id}`;
+    }
+    console.log([reqUrl, url]);
     const res = await fetch(url);
     const data = await res.json();
     return Response.json(data);
