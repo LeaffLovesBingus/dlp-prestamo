@@ -1,6 +1,7 @@
 "use client";
 import { fetchCatalogo} from '../endpoint.js';
 import '@splidejs/react-splide/css';
+import '@splidejs/splide/dist/css/splide.min.css';
 import TarjetaLibro from './TarjetaLibro';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { LOOP } from '@splidejs/splide';
@@ -107,16 +108,16 @@ const Vitrina = () => {
                     type: LOOP,
                     perPage: 5,
                     breakpoints: {
-                      1000: { perPage: 4, },
-                      700: { perPage: 3, },
-                      480: { perPage: 2, },
-                    },
+                      1024: { perPage: 4 },
+                      768: { perPage: 3 },
+                      640: { perPage: 2 },
+                  },
                     gap: "1vw",
                     pagination: false,
                     arrows: true,
                     focus: "left",
                 }}
-                aria-labelledby="carousel-heading"
+                aria-labelledby="reactivity-example-heading"
             >
             {data.libros?.slice(0, 12).map((libro) => {
                 return (
