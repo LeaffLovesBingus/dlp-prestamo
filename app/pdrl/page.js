@@ -1,5 +1,4 @@
 "use client";
-import "./pdrlStyle/pdrl.css";
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import { fetchLibro, prestamoDevolucion } from '../components/endpoint.js';
