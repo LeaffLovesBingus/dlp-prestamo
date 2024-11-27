@@ -1,14 +1,19 @@
 "use client";
-import "../pdrlStyle/pdrl.css";
-import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import Image from 'next/image';
 import Link from 'next/link';
-import { fetchLibro, prestamoDevolucion } from '@/app/components/endpoint.js';
+import { fetchLibro } from '../endpoint';
+import './pdrlstyles.css';
+import Router from 'next/router';
+  
+const InicioPedir = () => {
 
-export default function Home() {
+  /* acá deberiamos recuperar el titulo del líbro con su respectiva info
+  mientras, tengamos variables de ejemplo... */
 
-    const searchParams = useSearchParams();
+
+  const searchParams = useSearchParams();
     let id = searchParams.get("id");
 
     const [ data, setData ] = useState(null);
@@ -18,19 +23,23 @@ export default function Home() {
         }, []
     );
 
-    let bookTitle = data?.titulo;
-    let bookAutor = data?.autores;
-    let bookGenere = data?.tags[0];
-    let existencias = 0;
+  /*implemetar el get del libro con su respectivo id...*/
+  
+  /* let bookTitle = data?.titulo;
+  let bookAutor = data?.autores;
+  let bookGenre = data?.tags;
+  */
+  let existencias = 0;
+  let intereses = 0;
 
-    const [inputValue, setInputValue] = useState('');
+
+  const [inputValue, setInputValue] = useState('');
 
     const handleChange = (event) => {
         setInputValue(event.target.value);
     };
 
-    return (
-        <Suspense>
+  return (
         <div className='conteiner'>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
@@ -43,14 +52,13 @@ export default function Home() {
                     className="logo"
                     src = "/assets/logoBlanco.png"
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                     draggable={false}
                     />
                 </div>
-                <h1 className="title">DLP Library</h1>
                 </div>
 
-                <Link className='ir-a-catalogo' href=''>
+                <Link className='ir-a-catalogo' href='https://dlp-prestamo.vercel.app/catalogo/'>
                     <div className='icon'>
                         <span className="material-symbols-outlined">keyboard_double_arrow_left</span>Ir al Catálogo Original
                     </div>
@@ -75,11 +83,11 @@ export default function Home() {
                     <h1 className='reserva-header'>reserva para: </h1>
                     <div className='info-Book'>
                         <div className='nombreGenero-pedir'>
-                            <h1 className='nameBook'>{bookTitle}</h1>
-                            <h1 className='detailsBook'>{bookAutor} - {bookGenere}</h1>
+                            <h1 className='nameBook'>{data?.titulo}</h1>
+                            <h1 className='detailsBook'>{data?.autores} - #{data?.tags[0]}</h1>
                         </div>
                         <div className='existencias-pedir'>
-                            <h1 className='existenciasBook'>{existencias} existencias</h1>
+                            <h1 className='existenciasBook'>existencias</h1>
                         </div>
                     </div>
 
@@ -101,7 +109,7 @@ export default function Home() {
 
                     <div className='checkbox-container'>
                         <input type="checkbox" id="checkTerminos" className='checkTerminos'/>
-                        <label for="checkTerminos" className='check-box-label'>Acepto los términos y condiciones</label>
+                        <label className='check-box-label'>Acepto los términos y condiciones</label>
                     </div>
 
                     <h1 className='terminos-label'>
@@ -112,7 +120,7 @@ export default function Home() {
                     </h1>
 
                     <Link href='../pdrl/pedir/confirmacion' className='defPedir'>
-                        <button className='pedir-01'>
+                        <button className='pedir-01' onClick={handleClick}>
                             <h1>Pedir</h1>
                         </button>
                     </Link>
@@ -122,6 +130,7 @@ export default function Home() {
             </div>
         
         </div>
-        </Suspense>
     );
 }
+
+export default InicioPedir;

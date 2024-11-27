@@ -1,17 +1,14 @@
+"use client";
+import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import "../../pdrlStyle/pdrl.css";
-import { Suspense } from 'react';
-
-export const metadata = {
-    title: "Devolver",
-    description: "Devolver el libro",
-};
+import { fetchLibro } from '../endpoint';
+import './pdrlstyles.css';
   
-export default function Home() {
+const Confirmacion = () => {
 
-
-  return (<Suspense>
+  return (
     <div className='conteiner'>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
@@ -22,16 +19,15 @@ export default function Home() {
           <div className="imageWrapper-01">
             <Image
               className="logo"
-              src="/assets/logo.png"
+              src="/assets/logoBlanco.png"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               draggable={false}
             />
           </div>
-          <h1 className="title">DLP Library</h1>
         </div>
 
-        <Link className='ir-a-catalogo' href=''>
+        <Link className='ir-a-catalogo' href='https://dlp-prestamo.vercel.app/catalogo'>
           <div className='icon'>
             <span className="material-symbols-outlined">keyboard_double_arrow_left</span>Ir al Catálogo Original
           </div>
@@ -47,6 +43,7 @@ export default function Home() {
       </div>      
         
     </div>
-</Suspense>
     );
-  }
+}
+
+export default Confirmacion;
