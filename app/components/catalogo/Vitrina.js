@@ -1,5 +1,5 @@
 "use client";
-import { fetchCatalogo } from "../endpoint";
+import { fetchCatalogo} from '../components';
 import '@splidejs/react-splide/css';
 import TarjetaLibro from './TarjetaLibro';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
