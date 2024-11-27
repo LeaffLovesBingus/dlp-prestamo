@@ -7,8 +7,8 @@ const BotonCatalogo = () => {
     return (
         <Link href="/catalogo">
             <button 
-                className="boton catalogButton"
-            >Ir al catálogo</button>
+                className="boton botonCatalogo"
+            >⬇️ Ir al catálogo ⬇️</button>
         </Link>
     );
 }

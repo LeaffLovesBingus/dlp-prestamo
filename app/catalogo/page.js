@@ -5,6 +5,7 @@ import Vitrina from "../components/catalogo/Vitrina";
 import Tablero from "../components/catalogo/Tablero";
 import BotonVolver from "../components/catalogo/BotonVolver";
 import Link from "next/link";
+import { Box } from "@chakra-ui/react";
 
 
 export default function catalogo() {
@@ -13,10 +14,17 @@ export default function catalogo() {
         <>
             <header className="header">
                 <Logotipo/>
-                <BotonDonacion/>
-                <BarraBusqueda/>
-                <BotonVolver/>
-                <Link href="𝓘'𝓶 𝓯𝓮𝓮𝓵𝓲𝓷𝓰 𝓴𝓲𝓷𝓭𝓪 𝓯𝓻𝓮𝓪𝓴𝔂"><button>404</button></Link>
+                <Box
+                    display="flex"
+                    flexDirection="row"
+                    justifyContent="space-between"
+                >
+                    <Box>
+                        <BotonDonacion/>
+                        <BotonVolver/>
+                    </Box>
+                    <BarraBusqueda/>
+                </Box>
                 
             </header>
 

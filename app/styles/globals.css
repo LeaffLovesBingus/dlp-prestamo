@@ -94,12 +94,32 @@ a:active {
   color: #2f4668;
   font-weight: 420;
   font-size: large;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
 }
 
 /* End simple reset */
 
 /* Cosos */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+}
+
+.busqueda {
+  height: 7vh;
+  width: 30vw;
+  margin-right: 1vw;
+  padding-left: 1vw;
+}
+
+.botonBusqueda {
+  width: 3.5vw;
+  height: 7vh;
+}
+
+.botonDonar {
+  height: 7vh;
+  width: 10vw;
+}

@@ -7,7 +7,7 @@ const BotonDonacion = () => {
     return (
         <Link href="https://dlp-donacion.vercel.app">
             <button 
-                className="boton donateButton"
+                className="boton botonDonar"
             >Donar</button>
         </Link>
     );
