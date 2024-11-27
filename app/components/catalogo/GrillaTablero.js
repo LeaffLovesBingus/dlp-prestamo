@@ -35,7 +35,13 @@ const GrillaTablero = () => {
             // }}
         >
             <Grid
-                templateColumns="repeat(5, 1fr)"
+                templateColumns={{
+                    base: "repeat(3, 1fr)",
+                    sm: "repeat(2, 1fr)",
+                    md: "repeat(3, 1fr)",
+                    lg: "repeat(4, 1fr)",
+                    xl: "repeat(5, 1fr)",
+                }}
                 rowGap="3vw"
                 columnGap="3vh"
             >
