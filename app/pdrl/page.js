@@ -2,8 +2,9 @@
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import { fetchLibro } from '../components/endpoint';
+import { Suspense } from 'react';
 
-export default function Pdrl() {
+function GetLibro() {
     const searchParams = useSearchParams();
     let id = searchParams.get("id");
 
@@ -21,4 +22,12 @@ export default function Pdrl() {
             
         </div>
     )
-};
+}
+
+export default function Pdrl() {
+    return(
+        <Suspense>
+            <GetLibro/>
+        </Suspense>
+    )
+}
