@@ -18,7 +18,6 @@ export default function Pdrl() {
         <div>
             {data?.titulo}
             {data?.autores}
-            
         </div>
     )
 };
