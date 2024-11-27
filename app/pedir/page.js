@@ -21,7 +21,7 @@ export default function Home() {
         
         <div className='conteiner'>
 
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_upward_alt" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
 
             <header className='header'>
 
@@ -38,11 +38,12 @@ export default function Home() {
                 <h1 className="title">DLP Library</h1>
                 </div>
 
-                <div className='ir-a-catalogo'>
-                <button1 className='icon'>
-                    <span className="material-symbols-outlined">arrow_upward_alt</span> Ir al Catálogo Original
-                </button1>
-                </div>  
+                <Link className='ir-a-catalogo' href=''>
+                    <div className='icon'>
+                        <span className="material-symbols-outlined">keyboard_double_arrow_left</span>Ir al Catálogo Original
+                    </div>
+                </Link>
+
             </header>
 
             <div className="allInfo">
@@ -76,6 +77,7 @@ export default function Home() {
                         className='input-correo'
                         id="textBox"
                         type="text"
+                        placeholder="micorreo@ejemplo.com"
                         value={inputValue}
                         onChange={handleChange}
                         autoComplete='off'
@@ -85,8 +87,10 @@ export default function Home() {
                     <h1 className='estado-reserva-label'>A este correo le estaremos actualizando
                     sobre el estado de su reserva. </h1>
 
-                    <input type="checkbox" id="terminos-y-condiciones" className='check-teminos'/>
-                    <label htmlFor="terminos-y-condiciones" className='check-box-label'>Acepto los términos y condiciones</label>
+                    <div className='checkbox-container'>
+                        <input type="checkbox" id="checkTerminos" className='checkTerminos'/>
+                        <label for="checkTerminos" className='check-box-label'>Acepto los términos y condiciones</label>
+                    </div>
 
                     <h1 className='terminos-label'>
                         Si desea revisar estos términos, haga click{' '}
@@ -95,8 +99,13 @@ export default function Home() {
                         </Link>
                     </h1>
 
+                    <Link href='/pedir/confirmacion' className='defPedir'>
+                        <button className='pedir-01'>
+                            <h1>Pedir</h1>
+                        </button>
+                    </Link>
+
                 </div>
-    
 
             </div>
         

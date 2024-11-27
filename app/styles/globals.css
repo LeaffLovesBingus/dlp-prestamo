@@ -18,7 +18,7 @@
   /*formato*/
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   width: 172vh;
 }
 
@@ -53,13 +53,29 @@
 }
 
 .ir-a-catalogo{
-  border: 0.2vw solid #96969630;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  height: 6.5vh;
+  text-decoration: none;
+  color: rgb(241, 241, 241);
 }
 
 .icon{
+  border: 0.4vh solid #ffffff80;
+  border-radius: 2vh;
+  padding: 0.2em 0.5em;
+  font-size: 3.5vh;
+  align-items: center;
   display: flex;
+}
+
+.material-symbols-outlined {
+  margin-right: 1vh;
+  scale: 1.5;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
 }
 
 .allInfo{
@@ -77,7 +93,8 @@
   justify-content: center;
   align-items: center;
   /*formato-imagen*/
-  background-color: #a3a5c3;
+  border: 0.5vh solid #00000040;
+  border-radius: 2.5vh;
   position: relative;
   width: 22vw;
   height: 32vw;
@@ -102,10 +119,6 @@
 .logo{
   object-fit: contain;
   scale: 1.2;
-}
-
-.caratula{
-  object-fit: cover;
 }
 
 .bookInfo, .solicitud{
@@ -142,9 +155,8 @@
 }
 
 .formulario{
-  width: 125vh;
+  width: 128.5vh;
   height: 32vw;
-  border: 0.2vw solid #96969630;
   text-align: left;
 }
 .info-Book{
@@ -161,7 +173,7 @@
 }
 
 /*botones pedir, meinteresa, devolver*/
-button {
+button{
   /*formato*/
   cursor: pointer;
   display: flex;
@@ -181,6 +193,16 @@ button {
   font-size: 2.3vh;
   /*transición de color para el hover*/
   transition: background-color 1s ease-in;
+}
+
+.pedir-01{ 
+  height: 11.5vh;
+  width: 22vw;
+}
+.defPedir{
+  text-decoration: none;
+  position: relative;
+  left: 60%;
 }
 
 
@@ -233,12 +255,19 @@ h1{
   font-weight: 200;
   padding: 1vh;
 }
+.reserva-header{
+  margin-left: 1.5vh;
+  color: #abc5cf70;
+  font-weight: 300;
+}
 
 .correo-label{
+  margin-left: 1.4vh;
   font-size: 3.5vh;
   font-weight: 500;
 }
 .estado-reserva-label{
+  margin-left: 1.4vh;
   color: #abc5cf70;
   font-size: 2.4vh;
   font-weight: 200;
@@ -248,6 +277,7 @@ h1{
   font-weight: 400;
 }
 .terminos-label{
+  margin-left: 1.4vh;
   color: #abc5cf70;
   font-size: 2.4vh;
   font-weight: 200;
@@ -257,10 +287,10 @@ h1{
   text-underline-offset: 0.2vh;
 }
 
-
 .input-correo, .check-terminos{
-  width: 70vh;
-  height: 4vh;
+  margin-left: 2vh;
+  width: 64vh;
+  height: 3.3vh;
   padding: 1vh;
   border-radius: 1vh;
   background: linear-gradient(90deg, #75a8ff60 30%, #b8d9ff70);
@@ -269,9 +299,8 @@ h1{
   font-size: 2.5vh;
   font-weight: 600;
 }
-
-.check-terminos{
-  background: linear-gradient(90deg, #75a8ff 30%, #b8d9ff);
+.input-correo::placeholder{
+  color: #aeccff60;
 }
 
 .detailsBook{
@@ -289,7 +318,6 @@ h1{
 }
 
 .nameBook, .existenciasBook{
-
   font-size: clamp(2vh, 2.5vh, 4vh);
   text-align: center; /* Centra el texto */
   margin: 0 auto; /* Centra el h1 horizontalmente */
@@ -297,4 +325,57 @@ h1{
   word-break: break-word;
   font-weight: 500;
   white-space: normal; /* Permite saltos de línea */
+}
+
+.caratula{
+  object-fit: cover;
+  border-radius: 2.5vh;
+}
+
+.checkbox-container{
+  margin-left: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.checkTerminos{
+  appearance: none; /* Oculta el estilo predeterminado */
+  width: 4vh;
+  height: 4vh;
+  background: linear-gradient(90deg, #75a8ff60 30%, #b8d9ff70);
+  border: 0.6vh solid #b8d9ff50; 
+  border-radius: 1vh;
+  background-color: transparent;
+  cursor: pointer;
+}
+.checkTerminos:checked::after {
+  content: "✔";
+  color: #ffffff60;
+  display: flex;
+  font-size: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+/*mensaje feedback al devolver un libro*/
+.feedback-devolver{
+  position: relative;
+  top: 15%;
+  /*formato*/
+  width: 40vw;
+  height: 14vh;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*fondo*/
+  background-color: rgba(24, 24, 32, 0.4);
+  /*borde*/
+  border: 0.15vw solid rgba(0, 0, 0, 0.3); 
+  border-radius: 2vh;
+  /*texto*/
+  font-size: 3vh;
+}
+.messageBox{
+  font-size: 4vh;
 }
