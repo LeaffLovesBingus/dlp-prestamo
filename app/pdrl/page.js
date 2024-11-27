@@ -28,10 +28,19 @@ function GetLibro() {
 }
 
 export default function Pdrl() {
+    const searchParams = useSearchParams();
+    let id = searchParams.get("id");
 
-    let bookTitle = "Un libro";
-    let bookAutor = "autor";
-    let bookGenere = "género";
+    const [ data, setData ] = useState(null);
+    useEffect(
+        () => {
+            fetchLibro(id).then((res) => (setData(res.libros[0])))
+        }, []
+    );
+
+    let bookTitle = data?.titulo;
+    let bookAutor = data?.autor;
+    let bookGenere = data?.tags[0];
     let existencias = 0;
     let intereses = 0;
 
@@ -59,7 +68,7 @@ export default function Pdrl() {
                 <div className="imageWrapper-01">
                     <Image
                     className="logo"
-                    src="/assets/logo.png"
+                    src = "/assets/logoBlanco.png"
                     layout="fill"
                     objectFit="cover"
                     draggable={false}
@@ -81,7 +90,7 @@ export default function Pdrl() {
                 <div className="imageWrapper-02">
                     <Image
                     className="caratula"
-                    src=""
+                    src = {`data:image/jpeg;base64,${(data?.caratula)}`} 
                     layout="fill"
                     objectFit="cover"
                     draggable={false}

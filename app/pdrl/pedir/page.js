@@ -1,14 +1,26 @@
 "use client";
 import "../pdrlStyle/pdrl.css";
 import Image from 'next/image';
-import {useState} from 'react';
+import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from "react";
 import Link from 'next/link';
+import { fetchLibro, prestamoDevolucion } from '@/app/components/endpoint.js';
 
 export default function Home() {
 
-    let bookTitle = "Alicia en el país de la";
-    let bookAutor = "autor";
-    let bookGenere = "género";
+    const searchParams = useSearchParams();
+    let id = searchParams.get("id");
+
+    const [ data, setData ] = useState(null);
+    useEffect(
+        () => {
+            fetchLibro(id).then((res) => (setData(res.libros[0])))
+        }, []
+    );
+
+    let bookTitle = data?.titulo;
+    let bookAutor = data?.autores;
+    let bookGenere = data?.tags[0];
     let existencias = 0;
 
     const [inputValue, setInputValue] = useState('');
@@ -29,7 +41,7 @@ export default function Home() {
                 <div className="imageWrapper-01">
                     <Image
                     className="logo"
-                    src="/assets/logo.png"
+                    src = "/assets/logoBlanco.png"
                     layout="fill"
                     objectFit="cover"
                     draggable={false}
@@ -51,7 +63,7 @@ export default function Home() {
                     <div className="imageWrapper-02">
                         <Image
                         className="caratula"
-                        src="/assets/papelucho.png"
+                        src = {`data:image/jpeg;base64,${(data?.caratula)}`} 
                         layout="fill"
                         objectFit="cover"
                         draggable={false}
