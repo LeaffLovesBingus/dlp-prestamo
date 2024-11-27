@@ -5,13 +5,13 @@ import { fetchLibro } from '../components/endpoint';
 
 export default function Pdrl() {
     const searchParams = useSearchParams();
-
     const [id, setId] = useState(null);
-    useEffect(() => {
-        setId(searchParams.get("id"));
-    }, [searchParams]);
-
     const [data, setData] = useState(null);
+
+    useEffect(() => {
+        const fetchedId = searchParams.get("id");
+        setId(fetchedId);
+    }, [searchParams]);
 
     useEffect(() => {
         if (id) {
@@ -23,16 +23,14 @@ export default function Pdrl() {
         return <p>Cargando...</p>;
     }
 
+    if (!data) {
+        return <p>Cargando datos del libro...</p>;
+    }
+
     return (
         <div>
-            {data?(
-                <>
-                    <h1>{data.titulo}</h1>
-                    <p>{data.autores}</p>
-                </>
-            ) : (
-                <p>Cargando datos del libro...</p>
-            )}
+            <h1>{data.titulo}</h1>
+            <p>{data.autores}</p>
         </div>
     );
 }
