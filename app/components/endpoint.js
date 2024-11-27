@@ -49,6 +49,10 @@ export async function fetchCatalogo() {
   }
   
   export async function prestamoDevolucion(id, usuario, accion) {
+      if (!id || !usuario || !accion) {
+        console.error('Los datos enviados a la API no son válidos:', { id, usuario, accion });
+        return;
+    }
       try {
         const response = await fetch(`/api/prestamo`, { 
           method: "POST", 

@@ -3,9 +3,15 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import { fetchLibro } from '../endpoint';
+import { fetchLibro, prestamoDevolucion } from '../endpoint';
 import './pdrlstyles.css';
 import Router from 'next/router';
+
+
+const enviarPrestamo = (id, usuario, accion) => {
+    prestamoDevolucion(id, usuario, accion);
+}
+
   
 const InicioPedir = () => {
 
@@ -23,6 +29,7 @@ const InicioPedir = () => {
         }, []
     );
 
+
   /*implemetar el get del libro con su respectivo id...*/
   
   /* let bookTitle = data?.titulo;
@@ -38,6 +45,7 @@ const InicioPedir = () => {
     const handleChange = (event) => {
         setInputValue(event.target.value);
     };
+    console.log(inputValue);
 
   return (
         <div className='conteiner'>
@@ -120,7 +128,7 @@ const InicioPedir = () => {
                     </h1>
 
                     <Link href='../pdrl/pedir/confirmacion' className='defPedir'>
-                        <button className='pedir-01'>
+                        <button className='pedir-01' onClick={() => enviarPrestamo(id, inputValue, "PRESTAMO")}>
                             <h1>Pedir</h1>
                         </button>
                     </Link>

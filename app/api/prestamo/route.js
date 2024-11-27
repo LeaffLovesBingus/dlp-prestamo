@@ -27,3 +27,22 @@ export async function POST(req) {
         );
     }
 }
+
+/*
+export async function POST(req) {
+    try {
+        const body = await req.json();
+        
+        if (!body.id_libro || !body.usuario || !body.accion) {
+            return new Response('Cuerpo de la solicitud incompleto', { status: 400 });
+        }
+
+        // Procesa la solicitud aquí...
+        return new Response('Solicitud procesada correctamente', { status: 200 });
+    } catch (err) {
+        console.error('Error al analizar el JSON:', err.message);
+        return new Response('Error al procesar la solicitud', { status: 400 });
+    }
+}
+
+*/
