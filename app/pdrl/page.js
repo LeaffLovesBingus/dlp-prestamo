@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { fetchLibro } from '../components/endpoint';
 
 export default function Pdrl() {
@@ -15,9 +15,11 @@ export default function Pdrl() {
     );
 
     return(
-        <div>
-            {data?.titulo}
-            {data?.autores}
-        </div>
+        <Suspense>
+            <div>
+                {data?.titulo}
+                {data?.autores}
+            </div>
+        </Suspense>
     )
 };
