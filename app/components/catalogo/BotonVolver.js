@@ -1,22 +1,29 @@
 "use client";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const BotonVolver = ({ tipo }) => {
+    const router = useRouter();
+
+    const handleVolver = () => {
+        router.back();
+    };
 
     if ( tipo === 1 ) return (
-        <Link href="/">
-           <button
-                className="boton botonVolver"
-            >Volver</button>
-        </Link>
+        <button
+            className="boton botonVolver"
+            onClick={handleVolver}
+        >
+            Volver
+        </button>
     );
     else return (
-        <Link href="/">
-           <button
-                className="boton botonVolver2"
-            >Volver</button>
-        </Link>
+        <button
+            className="boton botonVolver2"
+            onClick={handleVolver}
+        >
+            Volver
+        </button>
     );
-}
+};
 
 export default BotonVolver;

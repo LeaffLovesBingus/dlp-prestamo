@@ -39,7 +39,7 @@ const GrillaTablero = () => {
                 rowGap="3vw"
                 columnGap="3vh"
             >
-                {data.libros?.map((libro) => {
+                {data?.libros?.map((libro) => {
                     return (
                         <Link 
                             href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}

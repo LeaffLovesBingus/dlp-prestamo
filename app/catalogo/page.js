@@ -1,3 +1,4 @@
+"use client";
 import BarraBusqueda from "../components/portada/BarraDeBusqueda";
 import Logotipo from "../components/portada/Logotipo";
 import BotonDonacion from "../components/portada/BotonDonar";

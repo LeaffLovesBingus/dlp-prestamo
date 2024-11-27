@@ -118,11 +118,11 @@ const Vitrina = () => {
                 }}
                 aria-labelledby="carousel-heading"
             >
-            {data.libros?.slice(0, 12).map((libro) => {
+            {data?.libros?.slice(0, 12).map((libro) => {
                 return (
                     <SplideSlide key={libro.id}>
                         <Link 
-                            href={`https://dlp-prestamo.vercel.app/drlp/libro?=${libro.id}`}
+                            href={`/prestamo`}
                             style={{ textDecoration: "none", color: "inherit" }}
                         >
                             <TarjetaLibro infoLibro={libro}/>
