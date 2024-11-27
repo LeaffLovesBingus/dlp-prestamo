@@ -13,20 +13,23 @@ function TarjetaLibro({ infoLibro }){
             display="flex"
             alignItems="center"
             justifyContent="center"
-            minWidth="100%"
+            width="100%"
             padding="1vw"
             bg="rgba(0, 0, 0, 0.3)"
             border="0.15vw solid rgba(0, 0, 0, 0.3)"
+            height="50vh"
             
             _hover={{ transform: "scale(1.02)", transition: "0.3s" }}
         >
-            <CardBody>
+            <CardBody
+                height="40vh"
+            >
                 <img
                     className="caratula"
                     src = {`data:image/jpeg;base64,${(infoLibro.caratula)}`} 
                     style={{
                         width: "100%",
-                        height: "40vh",
+                        height: "100%",
                         objectFit: "cover",
                         borderRadius: "10px"
                     }}
@@ -36,8 +39,9 @@ function TarjetaLibro({ infoLibro }){
                 className="labelLibro"
                 display="flex"
                 justifyContent="center"
-                alignItems="center"
+                alignItems=""
                 marginTop="0.5vh"
+                overflowY="hidden"
             >
                 {infoLibro.titulo===""?"[SIN NOMBRE]":infoLibro.titulo}
             </CardFooter>

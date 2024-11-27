@@ -54,7 +54,7 @@ const Vitrina = () => {
             <Splide
               options={{
                 type: LOOP,
-                perPage: 6,
+                perPage: 5,
                 gap: "1rem",
                 pagination: false,
                 arrows: false,
@@ -79,11 +79,11 @@ const Vitrina = () => {
 
     return (
         <Box
-            maxW="85vw"
+            width="85vw"
             marginX="auto"
             marginTop="2vh"
             marginBottom="10vh"
-            overflow="visible"
+            overflowX="visible"
             position="relative"
         >
             <Heading 
@@ -105,13 +105,13 @@ const Vitrina = () => {
             <Splide
                 options={{
                     type: LOOP,
-                    perPage: 4,
-                    gap: "1rem",
+                    perPage: 5,
                     breakpoints: {
-                        1024: { perPage: 4 },
-                        768: { perPage: 3 },
-                        480: { perPage: 2 },
+                      1000: { perPage: 4, },
+                      700: { perPage: 3, },
+                      480: { perPage: 2, },
                     },
+                    gap: "1vw",
                     pagination: false,
                     arrows: true,
                     focus: "left",
