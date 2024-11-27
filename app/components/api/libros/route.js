@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export async function GET(params) {
     let url = `https://dlp-api.vercel.app/libros`;
     const reqUrl = params.url;
@@ -5,8 +7,7 @@ export async function GET(params) {
         const id = reqUrl.split("?id=")[1];
         if (!isNaN(parseInt(id))) url = `https://dlp-api.vercel.app/libros?id=${id}`;
     }
-    console.log([reqUrl, url]);
     const res = await fetch(url);
     const data = await res.json();
-    return Response.json(data);
+    return NextResponse.json(data);
 }
