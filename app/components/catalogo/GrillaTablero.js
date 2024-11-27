@@ -19,7 +19,8 @@ const GrillaTablero = () => {
         <Box
             w="85vw"
             h="93vh"
-            bg="rgba(0, 0, 0, 0.3)"
+            bg="rgba(24, 24, 32, 0.4)"
+            border="0.15vw solid rgba(0, 0, 0, 0.3)"
             paddingY="5vh"
             overflowY="scroll"
             overflowX="hidden"

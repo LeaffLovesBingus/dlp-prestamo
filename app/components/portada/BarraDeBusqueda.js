@@ -13,7 +13,10 @@ const BarraBusqueda = () => {
     };
 
     return (
-        <Box>
+        <Box
+            display="flex"
+            flexDirection="row"
+        >
             <input 
                 className="boton busqueda"
                 type="search"

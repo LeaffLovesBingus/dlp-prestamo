@@ -1,5 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import Link from "next/link";
+import BotonVolver from "./components/catalogo/BotonVolver";
 
 // Esto es una página de error 404 personalizada
 // Solo debemos crear un archivo not-found.js en la carpeta pages y Next.js lo detectará automáticamente
@@ -20,11 +21,7 @@ function Error404() {
         <h1 className="title-404">Error 404</h1>
         <div className="container-404">
           <h2 className="text">Estamos trabajando para usted :)</h2>
-          <Link href="/" className="btn">
-            <button className="boton botonVolver">
-              Volver
-            </button>
-          </Link>
+          <BotonVolver tipo={1}/>
         </div>
       </div>
     </div>

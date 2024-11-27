@@ -34,7 +34,21 @@ const Vitrina = () => {
             overflow="visible"
             position="relative"
           >
-            <Heading as="h2" size="lg" textAlign="left" marginBottom="4vh">
+            <Heading 
+                as="h2" 
+                size="lg"
+                minH="8vh"
+                width="85vw"
+                textAlign="left" 
+                marginBottom="4vh"
+                bg="rgba(24, 24, 32, 0.4)"
+                border="0.15vw solid rgba(0, 0, 0, 0.3)"
+                borderRadius="15px"
+                paddingY="2vh"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+            >
               Recomendaciones
             </Heading>
             <Splide
@@ -74,9 +88,18 @@ const Vitrina = () => {
         >
             <Heading 
                 as="h2" 
-                size="lg" 
+                size="lg"
+                minH="8vh"
+                width="85vw" 
                 textAlign="left" 
-                marginBottom="4vh"
+                marginBottom="2vh"
+                bg="rgba(24, 24, 32, 0.4)"
+                border="0.15vw solid rgba(0, 0, 0, 0.3)"
+                borderRadius="15px"
+                paddingY="2vh"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
             > Recomendaciones </Heading>
 
             <Splide
