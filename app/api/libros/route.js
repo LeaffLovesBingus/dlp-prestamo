@@ -9,5 +9,5 @@ export async function GET(params) {
     }
     const res = await fetch(url);
     const data = await res.json();
-    return NextResponse.json(data);
+    return Response.json(data);
 }
