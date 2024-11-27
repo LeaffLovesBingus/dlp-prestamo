@@ -25,36 +25,7 @@ function GetLibro() {
     )
 }
 
-export default function Pdrl() {
-    const searchParams = useSearchParams();
-    let id = searchParams.get("id");
-
-    const [ data, setData ] = useState(null);
-    useEffect(
-        () => {
-            fetchLibro(id).then((res) => (setData(res.libros[0])))
-        }, []
-    );
-
-    let bookTitle = data?.titulo;
-    let bookAutor = data?.autor;
-    let bookGenere = data?.tags[0];
-    let existencias = 0;
-    let intereses = 0;
-
-    // recupero la interacción
-    const handleClick = (buttonId) => {
-        /*1 -> pedir, 2-> devolver */
-        switch (buttonId) {
-            case 1:
-            console.log("Pedir");
-            break;
-            case 2:
-            console.log("Devolver");
-            break;
-        }
-    };
-
+export default function Pdrl(){
     return(
         <Suspense>
             <InicioPdrl/>
