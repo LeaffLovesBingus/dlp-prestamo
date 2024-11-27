@@ -93,7 +93,7 @@ a:active {
   border-radius: 1vw;
   color: #2f4668;
   font-weight: 420;
-  font-size: clamp(1px, 1.5vw, 1.5vw);
+  font-size: clamp(1px, 3vh, 3vh);
 }
 
 /* End simple reset */
@@ -108,7 +108,7 @@ a:active {
 }
 
 .mentira {
-  font-size: clamp(1px, 2.5vw, 2.5vw);
+  font-size: clamp(1px, 4vh, 4vh);
 }
 
 .headerCatalogo {
