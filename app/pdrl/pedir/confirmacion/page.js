@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import "../../pdrlStyle/pdrl.css";
+import { Suspense } from 'react';
 
 export const metadata = {
     title: "Devolver",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function Home() {
 
 
-  return (
+  return (<Suspense>
     <div className='conteiner'>
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
@@ -46,6 +47,6 @@ export default function Home() {
       </div>      
         
     </div>
-
+</Suspense>
     );
   }

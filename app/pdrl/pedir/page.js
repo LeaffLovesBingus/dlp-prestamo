@@ -2,7 +2,7 @@
 import "../pdrlStyle/pdrl.css";
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Link from 'next/link';
 import { fetchLibro, prestamoDevolucion } from '@/app/components/endpoint.js';
 
@@ -30,7 +30,7 @@ export default function Home() {
     };
 
     return (
-        
+        <Suspense>
         <div className='conteiner'>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
@@ -122,5 +122,6 @@ export default function Home() {
             </div>
         
         </div>
+        </Suspense>
     );
 }

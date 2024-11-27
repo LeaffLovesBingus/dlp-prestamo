@@ -58,6 +58,7 @@ export default function Pdrl() {
     };
 
     return(
+        <Suspense>
         <div className='conteiner'>
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
@@ -137,6 +138,6 @@ export default function Pdrl() {
             </div>
                 
         </div>
-
+        </Suspense>
     )
 }
