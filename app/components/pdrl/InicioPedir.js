@@ -120,7 +120,7 @@ const InicioPedir = () => {
                     </h1>
 
                     <Link href='../pdrl/pedir/confirmacion' className='defPedir'>
-                        <button className='pedir-01' onClick={handleClick}>
+                        <button className='pedir-01'>
                             <h1>Pedir</h1>
                         </button>
                     </Link>
