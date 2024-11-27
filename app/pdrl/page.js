@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
-import { fetchLibro } from '../components/endpoint';
+import { fetchLibro } from '../components/endpoint.js';
 import { Suspense } from 'react';
 
 function GetLibro() {
@@ -19,7 +19,6 @@ function GetLibro() {
         <div>
             {data?.titulo}
             {data?.autores}
-            
         </div>
     )
 }
