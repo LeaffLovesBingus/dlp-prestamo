@@ -7,16 +7,17 @@ const HeaderTablero = () => {
 
     return (
         <Box
-            marginTop="5vh"
+            marginTop="2vh"
             position="relative"
-            bg="rgba(0, 0, 0, 0.3)"
-            minH="12vh"
-            w="85vw"
+            bg="rgba(24, 24, 32, 0.4)"
+            border="0.15vw solid rgba(0, 0, 0, 0.3)"
+            minH="10vh"
+            width="85vw"
             borderRadius="15px"
             display="flex"
             alignItems="center"
-            justifyContent="space-between"
-            paddingX="6vw"
+            justifyContent="center"
+            // paddingX="6vw"
         >
             <Heading 
                 as="h1" 
@@ -26,7 +27,7 @@ const HeaderTablero = () => {
                 Todos los libros
             </Heading>
 
-            <Filtros/> 
+            {/* <Filtros/>  */}
 
         </Box>
     );

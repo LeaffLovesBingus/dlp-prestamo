@@ -15,6 +15,8 @@ function TarjetaLibro({ infoLibro }){
             justifyContent="center"
             padding="1vw"
             bg="rgba(0, 0, 0, 0.3)"
+            border="0.15vw solid rgba(0, 0, 0, 0.3)"
+            
             _hover={{ transform: "scale(1.02)", transition: "0.3s" }}
         >
             <CardBody>

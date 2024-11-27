@@ -93,13 +93,80 @@ a:active {
   border-radius: 1vw;
   color: #2f4668;
   font-weight: 420;
-  font-size: large;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  font-size: clamp(1px, 1.5vw, 1.5vw);
 }
 
 /* End simple reset */
 
 /* Cosos */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+}
+
+.mentira {
+  font-size: clamp(1px, 2.5vw, 2.5vw);
+}
+
+.headerCatalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh 7vw;
+}
+
+.botonCatalogo {
+  height: 10vh;
+  aspect-ratio: 6/1;
+}
+
+.busqueda {
+  height: 7vh;
+  width: 30vw;
+  margin-right: 1vw;
+  padding-left: 1vw;
+}
+
+.botonBusqueda {
+  height: 7vh;
+  aspect-ratio: 1/1;
+}
+
+.botonDonar {
+  height: 7vh;
+  aspect-ratio: 3/1;
+}
+
+.botonVolver {
+  height: 7vh;
+  aspect-ratio: 3/1;
+}
+
+.botonVolver2 {
+  height: 7vh;
+  aspect-ratio: 5/1;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(241, 241, 241);
+  border: 0.4vh solid #ffffff80;
+}
+
+.footerPortada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.footerCatalogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background: #000;
+  height: 10vh;
+  margin-top: 2vh;
+  position: relative;
+}

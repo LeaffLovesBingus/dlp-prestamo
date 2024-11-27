@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
+import { Box } from "@chakra-ui/react";
 
 const BarraBusqueda = () => {
     const [busqueda, setBusqueda] = useState('');
@@ -11,16 +13,21 @@ const BarraBusqueda = () => {
     };
 
     return (
-        <>
+        <Box
+            display="flex"
+            flexDirection="row"
+        >
             <input 
-                className="busqueda"
+                className="boton busqueda"
                 type="search"
-                placeholder="Buscar libros"
+                placeholder="Buscar libros..."
                 value={busqueda}
                 onChange={handleSearch}
             />
-            <button className="botonBusqueda">🔍</button>
-        </>
+            <Link href="404">
+                <button className="boton botonBusqueda">🔍</button>
+            </Link>
+        </Box>
     );
 }
 
