@@ -2,7 +2,7 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import TarjetaLibro from "./TarjetaLibro";
-import { fetchCatalogo } from "../endpoint";
+import { fetchCatalogo } from "../endpoint.js";
 import Link from "next/link";
 
 
