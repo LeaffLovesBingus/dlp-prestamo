@@ -1,6 +1,6 @@
 export async function fetchCatalogo(id) {
     try {
-    const response = await fetch(`/api/libros?id=${id}`, { 
+    const response = await fetch(`/api/libro?id=${id}`, { 
         method: "GET", 
         headers: {'Accept': 'application/json'
         },
