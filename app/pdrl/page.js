@@ -74,7 +74,7 @@ export default function Pdrl() {
                     draggable={false}
                     />
                 </div>
-                <h1 className="title">DLP Library</h1>
+                <h1 className="title"></h1>
                 </div>
 
                 <Link className='ir-a-catalogo' href='/'>
@@ -126,7 +126,7 @@ export default function Pdrl() {
                     <h1>Me Interesa</h1>
                 </button>
 
-                <Link href="/devolver" style={{ textDecoration: 'none' }}>
+                <Link href="../pdrl/devolver" style={{ textDecoration: 'none' }}>
                     <button className='devolver' onClick={() => handleClick(2)}>
                         <h1>Devolver</h1>
                     </button>

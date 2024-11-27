@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import "./styles_catalogo/globals_prestamo.css"
+import "../pdrlStyle/pdrl.css";
 
 export const metadata = {
     title: "Devolver",
