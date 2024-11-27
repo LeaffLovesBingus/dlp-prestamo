@@ -5,32 +5,20 @@ import { fetchLibro } from '../components/endpoint';
 
 export default function Pdrl() {
     const searchParams = useSearchParams();
-    const [id, setId] = useState(null);
-    const [data, setData] = useState(null);
+    let id = searchParams.get("id");
 
-    useEffect(() => {
-        const fetchedId = searchParams.get("id");
-        setId(fetchedId);
-    }, [searchParams]);
-
-    useEffect(() => {
-        if (id) {
-            fetchLibro(id).then((res) => setData(res.libros[0]));
-        }
-    }, [id]);
-
-    if (!id) {
-        return <p>Cargando...</p>;
-    }
-
-    if (!data) {
-        return <p>Cargando datos del libro...</p>;
-    }
-
-    return (
-        <div>
-            <h1>{data.titulo}</h1>
-            <p>{data.autores}</p>
-        </div>
+    const [ data, setData ] = useState(null);
+    useEffect(
+        () => {
+            fetchLibro(id).then((res) => (setData(res.libros[0])))
+        }, []
     );
-}
+
+    return(
+        <div>
+            {data?.titulo}
+            {data?.autores}
+            
+        </div>
+    )
+};
