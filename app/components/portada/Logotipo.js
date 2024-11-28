@@ -1,11 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Logotipo = ({ isPortada }) => {
-    return (
+    if (isPortada) return (
         <Box
             style={{
-                maxHeight: isPortada ? "40vh" : "30vh",
+                maxHeight: "40vh",
                 height: "auto",
             }}
         >
@@ -17,6 +18,27 @@ const Logotipo = ({ isPortada }) => {
                 layout="responsive"
                 draggable = "false"
             />
+        </Box>
+    );
+    else return (
+        <Box
+            style={{
+                maxHeight: "30vh",
+                height: "auto",
+            }}
+        >
+            <Link href="/" legacyBehavior>
+                <a>
+                    <Image
+                        className = "logotipo"
+                        src = "/assets/logoBlanco.png"
+                        width = {500}
+                        height = {250}
+                        layout="responsive"
+                        draggable = "false"
+                    />
+                </a>
+            </Link>
         </Box>
         
     );

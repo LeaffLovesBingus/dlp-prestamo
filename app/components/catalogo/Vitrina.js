@@ -119,8 +119,8 @@ const Vitrina = () => {
                 }}
                 aria-labelledby="reactivity-example-heading"
             >
-            {data.libros?.slice(0, 12).map((libro) => {
-                return (
+                {data.libros?.map((libro) => {
+                if (libro.caratula != null)  return (
                     <SplideSlide key={libro.id}>
                         <Link 
                             href={`/pdrl?id=${libro.id}`}
