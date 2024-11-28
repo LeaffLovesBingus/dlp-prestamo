@@ -80,7 +80,7 @@ export async function fetchCatalogo() {
 
   export async function cambioAPI(libroActualizado) {
     try {
-      const response = await fetch('/API/libro', {
+      const response = await fetch("api/libros", {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
