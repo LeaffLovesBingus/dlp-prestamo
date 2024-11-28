@@ -8,9 +8,9 @@ import './pdrlstyles.css';
 import Router from 'next/router';
 
 
-const enviarPrestamo = (id, usuario, accion) => {
-    prestamoDevolucion(id, usuario, accion);
-}
+//const enviarPrestamo = (id, usuario, accion) => {
+//    prestamoDevolucion(id, usuario, accion);
+//}
 
   
 const InicioPedir = () => {
@@ -127,8 +127,8 @@ const InicioPedir = () => {
                         </Link>
                     </h1>
 
-                    <Link href='../pdrl/pedir/confirmacion' className='defPedir'>
-                        <button className='pedir-01' onClick={() => enviarPrestamo(id, inputValue, "PRESTAMO")}>
+                    <Link href='../pdrl/Confirmacion' className='defPedir'>
+                        <button className='pedir-01' onClick={() => prestamoDevolucion(id, inputValue, "PRESTAMO")/*enviarPrestamo(id, inputValue, "PRESTAMO")}>*/}>
                             <h1>Pedir</h1>
                         </button>
                     </Link>

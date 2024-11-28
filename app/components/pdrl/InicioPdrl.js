@@ -3,7 +3,7 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import { fetchLibro } from '../endpoint';
+import { fetchLibro, prestamoDevolucion } from '../endpoint';
 import './pdrlstyles.css';
   
 const InicioPdrl = () => {
@@ -38,6 +38,7 @@ const InicioPdrl = () => {
         break;
       case 2:
         console.log("Devolver");
+        prestamoDevolucion(id, "Anonimo", "DEVOLUCION");
         break;
     }
   };
