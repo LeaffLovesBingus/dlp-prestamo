@@ -3,7 +3,7 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import { fetchLibro, prestamoDevolucion } from '../endpoint';
+import { fetchLibro, prestamoDevolucion, cambioAPI } from '../endpoint';
 import './pdrlstyles.css';
   
 const InicioPdrl = () => {
