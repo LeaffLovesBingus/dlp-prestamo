@@ -39,6 +39,10 @@ const InicioPdrl = () => {
       case 2:
         console.log("Devolver");
         prestamoDevolucion(id, "Anonimo", "DEVOLUCION");
+        cambioAPI({
+          id: id,
+          prestado: false
+        }); 
         break;
     }
   };

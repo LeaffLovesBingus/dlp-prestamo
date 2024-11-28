@@ -77,3 +77,28 @@ export async function fetchCatalogo() {
         console.log('Hubo un problema con la petición Fetch: ' + error.message);
         }
   }
+
+  export async function cambioAPI(libroActualizado) {
+    try {
+      const response = await fetch('/API/libro', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(libroActualizado), // Enviar solo el libro actualizado
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Error al actualizar el libro:', errorData);
+        throw new Error(errorData.message || 'Error desconocido');
+      }
+  
+      const result = await response.json();
+      console.log('Libro actualizado correctamente:', result);
+      return result;
+    } catch (error) {
+      console.error('Error en cambioAPI:', error);
+      throw error;
+    }
+  }

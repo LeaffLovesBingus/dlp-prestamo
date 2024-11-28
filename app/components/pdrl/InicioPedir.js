@@ -3,7 +3,7 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
-import { fetchLibro, prestamoDevolucion } from '../endpoint';
+import { fetchLibro, prestamoDevolucion, cambioAPI } from '../endpoint';
 import './pdrlstyles.css';
 import Router from 'next/router';
 
@@ -29,6 +29,14 @@ const InicioPedir = () => {
         }, []
     );
 
+    const handleClick = () => {
+        /*1 -> pedir, 2-> devolver */
+        cambioAPI({
+            id: id,
+            prestado: false
+        }); 
+        prestamoDevolucion(id, inputValue, "PRESTAMO");
+      };
 
   /*implemetar el get del libro con su respectivo id...*/
   
@@ -128,7 +136,7 @@ const InicioPedir = () => {
                     </h1>
 
                     <Link href='../pdrl/Confirmacion' className='defPedir'>
-                        <button className='pedir-01' onClick={() => prestamoDevolucion(id, inputValue, "PRESTAMO")/*enviarPrestamo(id, inputValue, "PRESTAMO")}>*/}>
+                        <button className='pedir-01' onClick={() => handleClick() /*enviarPrestamo(id, inputValue, "PRESTAMO")}>*/}>
                             <h1>Pedir</h1>
                         </button>
                     </Link>
