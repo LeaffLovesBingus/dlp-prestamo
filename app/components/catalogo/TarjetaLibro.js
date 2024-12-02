@@ -1,5 +1,6 @@
 "use client";
 import { Card, CardBody, CardFooter } from "@chakra-ui/react";
+import getCaratulaPlaceholder from "@/public/assets/caratula-placeholder";
 
 function TarjetaLibro({ infoLibro }){
 
@@ -26,7 +27,7 @@ function TarjetaLibro({ infoLibro }){
             >
                 <img
                     className="caratula"
-                    src = {`data:image/jpeg;base64,${(infoLibro.caratula)}`} 
+                    src = {infoLibro.caratula !== null?`data:image/jpeg;base64,${(infoLibro.caratula)}`: getCaratulaPlaceholder()} 
                     style={{
                         width: "100%",
                         height: "100%",
