@@ -30,11 +30,6 @@ const InicioPedir = () => {
     );
 
     const handleClick = () => {
-        /*1 -> pedir, 2-> devolver */
-        cambioAPI({
-            id: id,
-            prestado: false
-        }); 
         prestamoDevolucion(id, inputValue, "PRESTAMO");
       };
 
@@ -135,7 +130,7 @@ const InicioPedir = () => {
                         </Link>
                     </h1>
 
-                    <Link href='../pdrl/Confirmacion' className='defPedir'>
+                    <Link href= '/pedir/confirmacion' className='defPedir'>
                         <button className='pedir-01' onClick={() => handleClick() /*enviarPrestamo(id, inputValue, "PRESTAMO")}>*/}>
                             <h1>Pedir</h1>
                         </button>

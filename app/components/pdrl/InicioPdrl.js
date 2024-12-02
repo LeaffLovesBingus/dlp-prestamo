@@ -38,11 +38,13 @@ const InicioPdrl = () => {
         break;
       case 2:
         console.log("Devolver");
-        cambioAPI({
-          id: id,
-          prestado: false
-        }); 
         prestamoDevolucion(id, "Anonimo", "DEVOLUCION");
+
+        //cambioAPI({
+        //  id: id,
+        //  prestado: false
+        //}); 
+      
         
         break;
     }
