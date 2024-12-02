@@ -55,10 +55,17 @@ const Vitrina = () => {
             <Splide
               options={{
                 type: LOOP,
-                perPage: 5,
-                gap: "1rem",
+                gap: "1vw",
                 pagination: false,
-                arrows: false,
+                perPage: 5,
+                breakpoints: {
+                  1024: { perPage: 4 },
+                  768: { perPage: 3 },
+                  640: { perPage: 2 },
+                },
+                gap: "1vw",
+                arrows: true,
+                focus: "left",
               }}
               aria-labelledby="carousel-heading"
             >
@@ -111,7 +118,7 @@ const Vitrina = () => {
                       1024: { perPage: 4 },
                       768: { perPage: 3 },
                       640: { perPage: 2 },
-                  },
+                    },
                     gap: "1vw",
                     pagination: false,
                     arrows: true,
