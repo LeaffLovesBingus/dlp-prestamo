@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { fetchLibro, prestamoDevolucion, cambioAPI } from '../endpoint';
-import './pdrlstyles.css';
 import Router from 'next/router';
 
 
@@ -55,7 +54,7 @@ const InicioPedir = () => {
 
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
 
-            <header className='header'>
+            <header className='headerPrestamo'>
 
                 <div className="titleContainer">
                 <div className="imageWrapper-01">
@@ -69,7 +68,7 @@ const InicioPedir = () => {
                 </div>
                 </div>
 
-                <Link className='ir-a-catalogo' href='https://dlp-prestamo.vercel.app/catalogo/'>
+                <Link className='ir-a-catalogo' href='/catalogo'>
                     <div className='icon'>
                         <span className="material-symbols-outlined">keyboard_double_arrow_left</span>Ir al Catálogo Original
                     </div>
@@ -131,7 +130,7 @@ const InicioPedir = () => {
                     </h1>
 
                     <Link href= '/pedir/confirmacion' className='defPedir'>
-                        <button className='pedir-01' onClick={() => handleClick() /*enviarPrestamo(id, inputValue, "PRESTAMO")}>*/}>
+                        <button className='pdrlButton pedir-01' onClick={() => handleClick() /*enviarPrestamo(id, inputValue, "PRESTAMO")}>*/}>
                             <h1>Pedir</h1>
                         </button>
                     </Link>

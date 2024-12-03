@@ -72,8 +72,8 @@ const Vitrina = () => {
               {Array.from({ length: 6 }).map((_, index) => (
                 <SplideSlide key={index}>
                   <Skeleton
-                    height="30vh"
-                    width="10vw"
+                    height="35vh"
+                    width="15vw"
                     borderRadius="10px"
                     startColor="#75a8ff"
                     endColor="#b8d9ff"

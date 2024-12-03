@@ -23,7 +23,7 @@ export default function Home() {
 
     return (
     <>  
-        <header className="header">
+        <header className="headerPortada">
             <Box
                 display="flex"
                 flexDirection="row"

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import { fetchLibro } from '../endpoint';
-import './pdrlstyles.css';
   
 const InicioDevolver = () => {
 
@@ -47,7 +46,7 @@ const InicioDevolver = () => {
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_left" />
 
-      <header className='header'>
+      <header className='headerPrestamo'>
 
         <div className="titleContainer">
           <div className="imageWrapper-01">
