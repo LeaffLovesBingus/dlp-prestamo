@@ -31,12 +31,7 @@ const GrillaTablero = () => {
             justifyContent="center"
         >
             <Grid
-                templateColumns={{
-                    base: "repeat(4, 1fr)",
-                    sm: "repeat(2, 1fr)",
-                    md: "repeat(3, 1fr)",
-                    lg: "repeat(4, 1fr)",
-                }}
+                templateColumns="repeat(2, 1fr)"
                 rowGap="3vw"
                 columnGap="0.3vh"
             >
