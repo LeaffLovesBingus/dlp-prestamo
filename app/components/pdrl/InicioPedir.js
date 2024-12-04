@@ -97,7 +97,9 @@ const InicioPedir = () => {
                             <h1 className='detailsBook'>{data?.autores} - #{data?.tags[0]}</h1>
                         </div>
                         <div className='existencias-pedir'>
-                            <h1 className='existenciasBook'>existencias</h1>
+                            <h1 className='existenciasBook'>
+                                {(data?.prestado == false) ? "Este libro se encuentra disponible" : "Este libro está registrado como prestado" }
+                                </h1>
                         </div>
                     </div>
 

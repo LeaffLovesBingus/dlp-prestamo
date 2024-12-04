@@ -36,7 +36,7 @@ const Confirmacion = () => {
       
       <div className="feedback-devolver">
         <h1 className="messageBox" >
-          Muchas gracias por pedir este libro!
+          ¡Muchas gracias por pedir este libro!
         </h1>
         Recuerda devolverlo dentro de 15 días
       </div>      

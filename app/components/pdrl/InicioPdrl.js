@@ -96,7 +96,7 @@ const InicioPdrl = () => {
           </div>
 
           <div className='existencias'>
-            <h1>{existencias} existencias</h1>
+            <h1>{(data?.prestado == false) ? "Este libro se encuentra disponible" : "Este libro está registrado como prestado" }</h1>
           </div>
 
           <div className='intereses'>

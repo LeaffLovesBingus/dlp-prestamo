@@ -70,7 +70,7 @@ const InicioDevolver = () => {
       
       <div className="feedback-devolver">
         <h1 className="messageBox" >
-          Muchas gracias por devolver el libro!
+          ¡Muchas gracias por devolver el libro!
         </h1>
         Ya puede volver al Catálogo principal
       </div>      
