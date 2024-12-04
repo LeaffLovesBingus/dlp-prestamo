@@ -254,6 +254,7 @@ a:active {
   gap: 2vw;
   /*width: 172vh;*/
   /*height: 32vw;*/
+  width: calc(100%);
 }
 
 .bookImage{
@@ -325,23 +326,23 @@ a:active {
 }
 
 .formulario{
-  width: 128.5vh;
+  /*width: 128.5vh;
   height: 32vw;
+  */
+  max-width: calc(70%);
+  min-width: 300px;
   text-align: left;
-}
-
-.info-Book{
-  gap: 3vh;
 }
 
 .nombreGenero-pedir, .existencias-pedir{
   border-radius: 3vh;
   justify-content: center;
   align-items: center;
-  margin-left: 4vh;
+  /*margin-left: 4vh;*/
   width: 29vw;
   height: 15vh;
   font-size: 2vh;
+  min-width: 250px;
 }
 
 /*botones pedir, meinteresa, devolver*/
@@ -379,7 +380,7 @@ button:hover{
 .defPedir{
   text-decoration: none;
   position: relative;
-  left: 60%;
+  float: inline-end;
 }
 
 /*etiqueta h1*/
@@ -408,13 +409,13 @@ h1{
 }
 
 .correo-label{
-  margin-left: 1.4vh;
+  /* margin-left: 1.4vh; */
   font-size: 3.5vh;
   font-weight: 500;
 }
 
 .estado-reserva-label{
-  margin-left: 1.4vh;
+  /* margin-left: 1.4vh; */
   color: #abc5cf70;
   font-size: 2.4vh;
   font-weight: 200;
@@ -426,7 +427,7 @@ h1{
 }
 
 .terminos-label{
-  margin-left: 1.4vh;
+  /* margin-left: 1.4vh; */
   color: #abc5cf70;
   font-size: 2.4vh;
   font-weight: 200;
@@ -438,7 +439,7 @@ h1{
 }
 
 .input-correo, .check-terminos{
-  margin-left: 2vh;
+  /* margin-left: 2vh; */
   width: 64vh;
   height: 6vh;
   padding: 1vh;
@@ -448,6 +449,7 @@ h1{
   color: #aeccff;
   font-size: 2.5vh;
   font-weight: 600;
+  max-width: calc(100%);
 }
 
 .input-correo::placeholder{
@@ -461,7 +463,9 @@ h1{
 
 .info-Book{
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  gap: 3vh;
+  justify-content: center;
 }
 
 .nameBook, .existenciasBook{
@@ -480,7 +484,7 @@ h1{
 }
 
 .checkbox-container{
-  margin-left: 2vh;
+  /* margin-left: 2vh; */
   display: flex;
   align-items: center;
 }
@@ -509,7 +513,6 @@ h1{
   top: 15%;
   /*formato*/
   width: 40vw;
-  height: 14vh;
   padding: 2vh;
   display: flex;
   flex-direction: column;
@@ -522,6 +525,8 @@ h1{
   border-radius: 2vh;
   /*texto*/
   font-size: 3vh;
+  min-width: 250px;
+  
 }
 
 .messageBox{

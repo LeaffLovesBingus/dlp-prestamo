@@ -60,7 +60,7 @@ const InicioDevolver = () => {
           </div>
         </div>
 
-        <Link className='ir-a-catalogo' href='https://dlp-prestamo.vercel.app/catalogo'>
+        <Link className='ir-a-catalogo' href='/catalogo'>
           <div className='icon'>
             <span className="material-symbols-outlined">keyboard_double_arrow_left</span>Ir al Catálogo Original
           </div>
